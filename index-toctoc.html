@@ -181,7 +181,8 @@
 
     .hero-title {
       font-size: 3.5rem;
-      line-height: 1.2;
+      font-weight: 700;
+      line-height: 1;
       margin-bottom: 2rem;
       color: var(--color-primary);
     }
@@ -200,6 +201,7 @@
     .hero-description p {
       margin-bottom: 1rem;
       font-size: 1.1rem;
+      font-weight: 400;
       line-height: 1.6;
       color: var(--color-primary);
       opacity: 0.9;
@@ -233,23 +235,6 @@
       display: flex;
       gap: 1rem;
       margin-top: 2rem;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 1rem 2rem;
-      border-radius: 50px;
-      font-weight: 500;
-      transition: all 0.3s ease;
-      text-decoration: none;
-    }
-
-    .btn-primary {
-      background: var(--color-primary);
-      color: white;
-      box-shadow: 0 4px 15px rgba(19, 34, 74, 0.2);
     }
 
     .btn-primary:hover {
@@ -594,12 +579,6 @@
       margin-bottom: 4rem;
     }
 
-    .section-title {
-      font-size: 2.5rem;
-      color: var(--color-primary);
-      margin-bottom: 1rem;
-    }
-
     .section-subtitle {
       font-size: 1.1rem;
       color: var(--color-primary);
@@ -650,6 +629,7 @@
       width: 70px;
       height: 70px;
       margin-bottom: 1.5rem;
+      margin-inline: auto;
     }
 
     .icon-wrapper {
@@ -691,6 +671,7 @@
       color: var(--color-primary);
       margin-bottom: 1rem;
       font-weight: 600;
+      text-align: center;
     }
 
     .benefit-description {
@@ -698,6 +679,7 @@
       opacity: 0.8;
       line-height: 1.6;
       margin-bottom: 1.5rem;
+      font-weight: 400;
     }
 
     .benefit-footer {
@@ -800,6 +782,7 @@
     .section-subtitle {
       color: var(--color-primary);
       opacity: 0.8;
+      font-weight: 400;
     }
 
     .services-grid {
@@ -1328,6 +1311,7 @@
       width: 70px;
       height: 70px;
       margin-bottom: 1.5rem;
+      margin-inline: auto;
     }
 
     .icon-wrapper {
@@ -1369,6 +1353,7 @@
       color: var(--color-primary);
       margin-bottom: 1rem;
       font-weight: 600;
+      text-align: center;
     }
 
     .card-description {
@@ -2354,6 +2339,7 @@
       align-items: center;
       justify-content: center;
       background: transparent;
+      margin-inline: auto;
       /* Changed from white to transparent */
       border-radius: 50%;
       z-index: 3;
@@ -2402,6 +2388,7 @@
       color: var(--color-text);
       line-height: 1.6;
       font-size: 1.1rem;
+      font-weight: 400;
     }
 
     .flexible-grid {
@@ -2466,24 +2453,65 @@
       flex-grow: 1;
     }
 
-    .btn-primary {
-      background: var(--color-accent);
-      color: white;
-      border: none;
-      padding: 0.75rem 1.5rem;
-      border-radius: 25px;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      letter-spacing: 0.5px;
+    /* Estilos existentes se mantienen igual */
+
+    /* Estilos para el manejo del slider en mobile */
+    .mobile-slider {
+      display: none;
+      width: 100%;
+      padding: 20px 0 40px;
     }
 
-    .btn-primary:hover {
+    .swiper-slide {
+      width: 85%;
+      height: auto;
+    }
+
+    /* Personalizando la paginación */
+    .swiper-pagination {
+      bottom: 0 !important;
+    }
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
       background: var(--color-primary);
-      transform: translateY(-2px);
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0.3;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: var(--color-accent);
+    }
+
+    /* Media queries */
+    @media (min-width: 769px) {
+      .desktop-grid {
+        display: grid;
+      }
+
+      .mobile-slider {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .desktop-grid {
+        display: none;
+      }
+
+      .mobile-slider {
+        display: block;
+      }
+
+      .flexible-card {
+        margin: 0;
+        height: 100%;
+      }
+
+      .section-description {
+        margin-bottom: 2rem;
+      }
     }
 
     /* Responsive adjustments */
@@ -2802,7 +2830,7 @@
 
     .contact-grid {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: auto 1fr;
       gap: 4rem;
       align-items: start;
     }
@@ -3015,6 +3043,11 @@
               en algo excepcional.</p>
             <p>Transforma tu casa, apartamento y oficina con el respaldo de toc toc aseo, confía en un servicio de
               limpieza profesional que se adapte a tus necesidades.</p>
+            <p>
+              Con nuestro personal altamente capacitado y atención personalizada, aseguramos espacios impecables y
+              libres de preocupaciones. Agenda tu servicio ahora y disfruta de un hogar renovado. ¡Haz clic y vive la
+              diferencia!
+            </p>
           </div>
           <div class="hero-stats">
             <div class="stat-item">
@@ -3022,7 +3055,7 @@
               <span class="stat-label">Años de experiencia</span>
             </div>
             <div class="stat-item">
-              <span class="stat-number">1000+</span>
+              <span class="stat-number">10.000+</span>
               <span class="stat-label">Clientes satisfechos</span>
             </div>
             <div class="stat-item">
@@ -3118,7 +3151,7 @@
           </div>
           <h3 class="benefit-title">Personal capacitado</h3>
           <p class="benefit-description">Nuestro equipo pasa por rigurosas capacitaciones y evaluaciones constantes para
-            brindarte un servicio profesional y de calidad.</p>
+            brindarte un servicio profesional y de calidad. Una limpieza profesional con un toque humano</p>
           <div class="benefit-footer">
             <span class="benefit-check">
               <i class="fas fa-check-circle"></i>
@@ -3133,7 +3166,7 @@
             </div>
             <div class="icon-bg"></div>
           </div>
-          <h3 class="benefit-title">Aseo garantizado</h3>
+          <h3 class="benefit-title">Aseo garantizado en tu hogar</h3>
           <p class="benefit-description">Entendemos tus gustos y preferencias. Nos aseguramos de cumplir con los más
             altos estándares para que quedes 100% satisfecho con nuestros resultados.</p>
           <div class="benefit-footer">
@@ -3325,6 +3358,35 @@
             <i class="fas fa-arrow-right"></i>
           </a>
         </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <span class="service-tag">Servicios puntuales</span>
+          </div>
+          <h3 class="service-title">Más que limpieza, soluciones a la medida.</h3>
+          <p class="service-description">Nuestro personal puede ayudarte con tareas como:</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Limpiar cocina</li>
+            <li><i class="fas fa-check"></i> Limpiar nevera</li>
+            <li><i class="fas fa-check"></i> Cocinar</li>
+            <li><i class="fas fa-check"></i> Planchar</li>
+            <li><i class="fas fa-check"></i> Lavar ropa</li>
+            <li><i class="fas fa-check"></i> Arreglar closet</li>
+            <li><i class="fas fa-check"></i> Eventualidades y eventos especiales</li>
+            <li><i class="fas fa-check"></i> Aseo post-obra</li>
+            <li><i class="fas fa-check"></i> Organización de mudanzas</li>
+          </ul>
+          <div class="service-price custom">
+            <span class="price-contact">Cotización personalizada</span>
+          </div>
+          <a href="#contacto" class="service-cta">
+            <span>Consultar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -3351,6 +3413,8 @@
             </div>
             <h3 class="city-name">Bogotá</h3>
             <p class="city-description">Servicio doméstico confiable a tu alcance.</p>
+            <p>En la capital, ofrecemos soluciones de limpieza y cuidado del hogar con personal altamente capacitado.
+              Vive la tranquilidad de un equipo profesional y seguro.</p>
             <div class="city-features">
               <div class="feature">
                 <i class="fas fa-clock"></i>
@@ -3366,7 +3430,7 @@
               </div>
             </div>
             <a href="#contacto" class="city-cta">
-              <span>Agenda ahora</span>
+              <span>Agenda ahora Bogotá</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -3383,6 +3447,9 @@
             </div>
             <h3 class="city-name">Medellín</h3>
             <p class="city-description">La mejor opción para tu hogar.</p>
+            <p>Disfruta de un apoyo doméstico personalizado en la ciudad de la eterna primavera. Nuestro equipo asegura
+              espacios impecables para que tú disfrutes lo que realmente importa.
+            </p>
             <div class="city-features">
               <div class="feature">
                 <i class="fas fa-clock"></i>
@@ -3398,7 +3465,7 @@
               </div>
             </div>
             <a href="#contacto" class="city-cta">
-              <span>Reserva hoy mismo</span>
+              <span>Reserva en Medellín</span>
               <i class="fas fa-arrow-right"></i>
             </a>
           </div>
@@ -3415,6 +3482,9 @@
             </div>
             <h3 class="city-name">Cali</h3>
             <p class="city-description">Limpieza profesional al calor del Valle.</p>
+            <p>Llevamos a Cali un apoyo doméstico que combina calidad, confianza y atención al detalle. Deja tu casa o
+              apartamento en manos de expertas.
+            </p>
             <div class="city-features">
               <div class="feature">
                 <i class="fas fa-clock"></i>
@@ -3447,6 +3517,8 @@
             </div>
             <h3 class="city-name">Bucaramanga</h3>
             <p class="city-description">Soluciones para hogares impecables.</p>
+            <p>En la ciudad bonita, ofrecemos ayuda doméstica que se adapta a tus necesidades. Confía en nuestras
+              profesionales para mantener tu casa o apartamento limpio y organizado.</p>
             <div class="city-features">
               <div class="feature">
                 <i class="fas fa-clock"></i>
@@ -3471,6 +3543,52 @@
     </div>
   </section>
 
+  <section class="contact-section" id="contacto">
+    <div class="container-landing">
+      <div class="contact-grid">
+        <!-- Información de contacto -->
+        <div class="contact-info">
+          <h2 class="contact-title">Contáctanos y contrata hoy</h2>
+          <p class="contact-description">
+            No esperes más, agenda tu servicio y mejora así tu calidad de vida. Disfruta de espacios limpios y ordenados
+            con el respaldo y profesionalismo de toc toc aseo.
+          </p>
+
+          <div class="contact-details">
+            <h3>Información de contacto</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+5712345789" class="contact-link">+57 123 456 7890</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@toctocaseo.com" class="contact-link">info@toctocaseo.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Calle Principal #123, Bogotá, Colombia</span>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="training-section" id="capacitacion">
     <div class="container-landing">
       <div class="training-header">
@@ -3488,7 +3606,7 @@
         </div>
         <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
           <div class="stat-number">
-            <span class="counter">50</span>+
+            <span class="counter">30.000</span>+
           </div>
           <div class="stat-label">Horas de entrenamiento</div>
         </div>
@@ -3577,15 +3695,7 @@
           <div class="training-features">
             <div class="feature">
               <i class="fas fa-check-circle"></i>
-              <span>Soporte 24/7</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
               <span>Seguimiento personalizado</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Feedback inmediato</span>
             </div>
           </div>
           <div class="contact-button">
@@ -3708,7 +3818,7 @@
             <div class="stat-label">Calificación promedio</div>
           </div>
           <div class="stat-item">
-            <div class="stat-number">1000+</div>
+            <div class="stat-number">5000+</div>
             <div class="stat-icon">
               <i class="fas fa-smile"></i>
             </div>
@@ -3871,9 +3981,6 @@
 
       <div class="services-grid">
         <div class="service-card" data-aos="fade-up" data-aos-delay="100">
-          <div class="service-badge">
-            <span>Disponible 24/7</span>
-          </div>
           <div class="service-icon">
             <div class="icon-wrapper">
               <i class="fas fa-exclamation-triangle"></i>
@@ -3887,10 +3994,6 @@
           <ul class="service-features">
             <li>
               <i class="fas fa-check-circle"></i>
-              <span>Respuesta inmediata</span>
-            </li>
-            <li>
-              <i class="fas fa-check-circle"></i>
               <span>Equipo especializado</span>
             </li>
             <li>
@@ -3898,10 +4001,6 @@
               <span>Servicio de emergencia</span>
             </li>
           </ul>
-          <div class="service-price">
-            <span class="price-label">Desde</span>
-            <span class="price-amount">$150.000</span>
-          </div>
           <a href="#contacto" class="service-cta">
             <span>Solicitar servicio</span>
             <i class="fas fa-arrow-right"></i>
@@ -3910,7 +4009,7 @@
 
         <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
           <div class="service-badge">
-            <span>Más solicitado</span>
+            <span>Servicio Premium</span>
           </div>
           <div class="service-icon">
             <div class="icon-wrapper">
@@ -3919,8 +4018,11 @@
             <div class="icon-bg"></div>
           </div>
           <h3 class="service-title">Limpieza Post Obra</h3>
-          <p class="service-description">Deja la limpieza pesada en manos expertas. Nuestro equipo post obra elimina
-            restos de polvo, pintura, y residuos de construcción, dejando tus espacios listos para habitar.</p>
+          <p class="service-description">Deja las tareas más exigentes en manos expertas. Nuestro equipo post obra
+            elimina restos de polvo, pintura y residuos de construcción, dejando tus espacios listos para habitar.
+            Usamos productos y técnicas especializadas que garantizan resultados impecables sin comprometer tus
+            superficies. Contrata ahora y disfruta de un entorno renovado desde el primer día.
+          </p>
           <ul class="service-features">
             <li>
               <i class="fas fa-check-circle"></i>
@@ -3935,10 +4037,6 @@
               <span>Garantía de servicio</span>
             </li>
           </ul>
-          <div class="service-price">
-            <span class="price-label">Desde</span>
-            <span class="price-amount">$200.000</span>
-          </div>
           <a href="#contacto" class="service-cta">
             <span>Contratar ahora</span>
             <i class="fas fa-arrow-right"></i>
@@ -3947,7 +4045,7 @@
 
         <div class="service-card" data-aos="fade-up" data-aos-delay="300">
           <div class="service-badge">
-            <span>Servicio Premium</span>
+            <span>Más solicitado</span>
           </div>
           <div class="service-icon">
             <div class="icon-wrapper">
@@ -3956,8 +4054,11 @@
             <div class="icon-bg"></div>
           </div>
           <h3 class="service-title">Lavado de muebles, colchones y tapetes</h3>
-          <p class="service-description">Nuestro servicio de lavado elimina manchas, suciedad, ácaros y malos olores,
-            garantizando un ambiente fresco y saludable en tu hogar.</p>
+          <p class="service-description">Nuestro servicio de lavado de muebles, tapetes y colchones elimina manchas,
+            suciedad, ácaros y malos olores, garantizando un ambiente fresco y saludable en tu hogar. Usamos técnicas
+            avanzadas y productos de alta calidad para preservar los materiales y devolverles su apariencia original.
+            Agenda hoy mismo y transforma tus espacios con resultados impecables.
+          </p>
           <ul class="service-features">
             <li>
               <i class="fas fa-check-circle"></i>
@@ -3972,10 +4073,6 @@
               <span>Resultados garantizados</span>
             </li>
           </ul>
-          <div class="service-price">
-            <span class="price-label">Desde</span>
-            <span class="price-amount">$180.000</span>
-          </div>
           <a href="#contacto" class="service-cta">
             <span>Agendar servicio</span>
             <i class="fas fa-arrow-right"></i>
@@ -3995,7 +4092,7 @@
         de un apoyo personalizado que siempre está a tu alcance!
       </p>
 
-      <div class="flexible-grid">
+      <div class="flexible-grid desktop-grid">
         <!-- Card 1 -->
         <div class="flexible-card">
           <div class="icon-container">
@@ -4084,6 +4181,117 @@
           <button class="btn-primary">Agenda tu plan mensual</button>
         </div>
       </div>
+
+      <!-- Slider para Mobile -->
+      <div class="swiper mobile-slider">
+        <div class="swiper-wrapper">
+          <!-- Las mismas cards pero dentro de swiper-slide -->
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-day"></i>
+              </div>
+              <h3>Empleada doméstica por días</h3>
+              <p>Cuando necesitas apoyo en tareas específicas o temporales, contamos con colaboradoras por días es
+                ideal.
+                Nuestro equipo profesional está listo para ayudarte cuando lo necesites.</p>
+              <button class="btn-primary">Reserva hoy</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-week"></i>
+              </div>
+              <h3>Lunes a viernes y sábados</h3>
+              <p>Disfruta de la tranquilidad de contar con una colaboradora de lunes a viernes o de 3 a 5 días por
+                semana.
+                Nuestras profesionales capacitadas aseguran un espacio impecable y ordenado cada día.</p>
+              <button class="btn-primary">Contrata ahora</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3>Servicios una vez a la semana</h3>
+              <p>Si buscas mantener la limpieza y el orden con regularidad, nuestras colaboradoras pueden apoyar una vez
+                a la semana, adaptándose a tus necesidades.</p>
+              <button class="btn-primary">Asignar día de limpieza</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-hourglass-half"></i>
+              </div>
+              <h3>Apoyo medio tiempo</h3>
+              <p>Para quienes necesitan ayuda constante pero no todo el día, nuestro apoyo de medio tiempo se ajusta a
+                tus horarios y prioridades.</p>
+              <button class="btn-primary">Agenda tu apoyo</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Atención de tiempo completo</h3>
+              <p>Para sistemas que requieren cuidado constante, ofrecemos apoyo a tiempo completo, cubriendo cada
+                detalle y
+                garantizando la tranquilidad.</p>
+              <button class="btn-primary">Contrata hoy mismo</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3>Colaboradora por fines de semana</h3>
+              <p>Atención los días más libres con una colaboradora disponible los fines de semana. Desde limpieza
+                profunda
+                hasta tareas específicas, garantizamos calidad y profesionalismo.</p>
+              <button class="btn-primary">Reserva ya</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>Doméstica externa</h3>
+              <p>La opción ideal para quienes prefieren un apoyo diario a por horas sin permanencia. Nuestras
+                colaboradoras
+                externas son profesionales que garantizan resultados excelentes.</p>
+              <button class="btn-primary">Contáctanos hoy</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-plus"></i>
+              </div>
+              <h3>Servicio por mes</h3>
+              <p>Para cuidado constante, nuestro plan mensual asegura una casa u apartamento impecable todo el tiempo.
+                Nuestras profesionales se adaptan a tus necesidades, ofreciendo tranquilidad.</p>
+              <button class="btn-primary">Agenda tu plan mensual</button>
+            </div>
+          </div>
+          <!-- ... Repetir para cada card ... -->
+        </div>
+        <!-- Navegación del slider -->
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
   </section>
 
@@ -4139,60 +4347,6 @@
     </div>
   </section>
 
-  <section class="contact-section" id="contacto">
-    <div class="container-landing">
-      <div class="contact-grid">
-        <!-- Información de contacto -->
-        <div class="contact-info">
-          <h2 class="contact-title">Contáctanos y contrata hoy</h2>
-          <p class="contact-description">
-            No esperes más, agenda tu servicio y mejora así tu calidad de vida. Disfruta de espacios limpios y ordenados
-            con el respaldo y profesionalismo de toc toc aseo.
-          </p>
-
-          <div class="contact-details">
-            <h3>Información de contacto</h3>
-            <div class="contact-item">
-              <i class="fas fa-phone"></i>
-              <a href="tel:+5712345789" class="contact-link">+57 123 456 7890</a>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:info@toctocaseo.com" class="contact-link">info@toctocaseo.com</a>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Calle Principal #123, Bogotá, Colombia</span>
-            </div>
-
-            <div class="social-links">
-              <a href="#" class="social-link" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-link" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="social-link" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-link" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Mapa -->
-        <div class="map-container">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39280650613!2d-74.24789682451442!3d4.648625932726078!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses!2sco!4v1645564565464!5m2!1ses!2sco"
-            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section class="faq-section" id="preguntas-frecuentes">
     <div class="container-landing">
       <h2 class="faq-title">Preguntas Frecuentes</h2>
@@ -4201,6 +4355,73 @@
       </div>
     </div>
   </section>
+
+
+  <!-- Añadir Swiper JS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth <= 768) {
+        const swiper = new Swiper('.mobile-slider', {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          centeredSlides: true,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          },
+          effect: 'coverflow',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          },
+        });
+      }
+    });
+
+    // Manejar cambios de tamaño de ventana
+    window.addEventListener('resize', function () {
+      if (window.innerWidth <= 768) {
+        if (!document.querySelector('.swiper').swiper) {
+          const swiper = new Swiper('.mobile-slider', {
+            // ... mismas opciones que arriba
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            },
+            effect: 'coverflow',
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            },
+          });
+        }
+      }
+    });
+  </script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
