@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <style>
     /* Reset y variables */
     :root {
@@ -490,7 +491,7 @@
     .services-grid {
       margin: 3rem 0;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 2rem;
       position: relative;
       z-index: 2;
@@ -605,39 +606,6 @@
       margin-inline: auto;
     }
 
-    .icon-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: white;
-      border-radius: 50%;
-      z-index: 2;
-    }
-
-    .icon-wrapper i {
-      font-size: 1.8rem;
-      color: var(--color-accent);
-      transition: transform 0.3s ease;
-    }
-
-    .benefit-card:hover .icon-wrapper i {
-      transform: scale(1.1);
-    }
-
-    .icon-bg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
-      background: var(--color-secondary);
-      border-radius: 50%;
-      z-index: 1;
-    }
 
     .benefit-title {
       font-size: 1.25rem;
@@ -701,7 +669,7 @@
 
     .btn-primary {
       background: var(--color-primary);
-      color: white;
+      color: white !important;
       border: 2px solid var(--color-primary);
     }
 
@@ -765,8 +733,9 @@
     }
 
     .service-icon {
-      width: 60px;
-      height: 60px;
+      position: relative;
+      width: 70px;
+      height: 70px;
       background: var(--color-secondary);
       border-radius: 15px;
       display: flex;
@@ -774,6 +743,7 @@
       justify-content: center;
       transition: all 0.3s ease;
       margin-bottom: 1.5rem;
+      z-index: 2;
     }
 
     .service-card:hover .service-icon {
@@ -788,7 +758,7 @@
     }
 
     .service-card:hover .service-icon i {
-      color: white;
+      color: var(--color-primary);
     }
 
     .service-tag {
@@ -810,6 +780,7 @@
     .service-description {
       color: var(--color-primary);
       opacity: 0.8;
+      line-height: 1.6;
       margin-bottom: 1.5rem;
     }
 
@@ -830,7 +801,7 @@
 
     .service-features i {
       color: var(--color-accent);
-      font-size: 0.9rem;
+      font-size: 1rem;
     }
 
     .service-price {
@@ -846,10 +817,11 @@
       font-size: 0.9rem;
       color: var(--color-primary);
       opacity: 0.8;
+      margin-bottom: 0.25rem;
     }
 
     .price-amount {
-      font-size: 2rem;
+      font-size: 1.5rem;
       font-weight: 700;
       color: var(--color-primary);
     }
@@ -872,10 +844,11 @@
       gap: 0.5rem;
       padding: 1rem;
       background: var(--color-primary);
-      color: white;
+      color: white !important;
       text-decoration: none;
       border-radius: 10px;
       transition: all 0.3s ease;
+      margin-top: auto;
     }
 
     .service-cta:hover {
@@ -929,9 +902,13 @@
     }
 
     .section-description {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      color: var(--color-text);
+      line-height: 1.6;
       font-size: 1.1rem;
-      color: var(--color-primary);
-      margin-bottom: 1rem;
+      font-weight: 400;
       opacity: 0.8;
     }
 
@@ -952,6 +929,9 @@
 
     .map-container {
       position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
       width: 100%;
       height: 100%;
     }
@@ -1119,19 +1099,6 @@
       }
     }
 
-    /* Animaciones AOS */
-    [data-aos] {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease;
-    }
-
-    [data-aos].aos-animate {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-
     /* Oportunidades Section */
     .oportunidades-section {
       background: var(--color-secondary);
@@ -1187,9 +1154,11 @@
     }
 
     .section-title {
-      font-size: 2.5rem;
+      text-align: center;
       color: var(--color-primary);
-      margin-bottom: 1rem;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
     }
 
     .training-stats {
@@ -1239,13 +1208,15 @@
       justify-content: center;
       background: white;
       border-radius: 50%;
-      z-index: 2;
+      z-index: 3;
+      margin-inline: auto;
     }
 
     .icon-wrapper i {
       font-size: 2rem;
       color: var(--color-accent);
       transition: transform 0.3s ease;
+      z-index: 4;
     }
 
     .training-card:hover .icon-wrapper i {
@@ -1370,18 +1341,6 @@
       animation: countUp 1s ease-out forwards;
     }
 
-    /* Animaciones AOS */
-    [data-aos] {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease;
-    }
-
-    [data-aos].aos-animate {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
     .impact-section {
       padding: 6rem 0;
       background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
@@ -1446,11 +1405,6 @@
       margin-bottom: 2rem;
     }
 
-    .stat-label {
-      color: var(--color-primary);
-      font-size: 0.9rem;
-    }
-
     .impact-description {
       font-size: 1.1rem;
       color: var(--color-primary);
@@ -1507,17 +1461,6 @@
       transition: all 0.3s ease;
     }
 
-    .btn-primary {
-      background: var(--color-primary);
-      color: white !important;
-    }
-
-    .btn-secondary {
-      background: white;
-      color: var(--color-primary);
-      border: 2px solid var(--color-primary);
-    }
-
     .btn-primary:hover,
     .btn-secondary:hover {
       transform: translateY(-2px);
@@ -1555,17 +1498,6 @@
       border-radius: 50px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       animation: float 3s ease-in-out infinite;
-    }
-
-    .badge-content {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      color: var(--color-primary);
-    }
-
-    .badge-content i {
-      color: var(--color-accent);
     }
 
     .trust-indicators {
@@ -1635,18 +1567,6 @@
       }
     }
 
-    /* Animaciones AOS */
-    [data-aos] {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease;
-    }
-
-    [data-aos].aos-animate {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
     .testimonials-section {
       padding: 6rem 0;
       background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
@@ -1668,19 +1588,6 @@
       text-align: center;
       max-width: 800px;
       margin: 0 auto 4rem;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      color: var(--color-primary);
-      margin-bottom: 1rem;
-    }
-
-    .section-description {
-      font-size: 1.1rem;
-      color: var(--color-primary);
-      opacity: 0.8;
-      margin-bottom: 2rem;
     }
 
     .testimonials-stats {
@@ -1935,18 +1842,6 @@
       }
     }
 
-    /* Animaciones AOS */
-    [data-aos] {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease;
-    }
-
-    [data-aos].aos-animate {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
     .additional-services {
       padding: 6rem 0;
       background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
@@ -1962,53 +1857,6 @@
       width: 100%;
       height: 100%;
       background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
-    }
-
-    .services-header {
-      text-align: center;
-      max-width: 800px;
-      margin: 0 auto 4rem;
-    }
-
-    .section-title {
-      font-size: 2.5rem;
-      color: var(--color-primary);
-      margin-bottom: 1rem;
-    }
-
-    .section-description {
-      font-size: 1.1rem;
-      color: var(--color-primary);
-      opacity: 0.8;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
-      position: relative;
-      z-index: 2;
-    }
-
-    .service-card {
-      background: white;
-      border-radius: 20px;
-      padding: 2rem;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-    }
-
-    .service-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
-    }
-
-    .service-card.featured {
-      border: 2px solid var(--color-accent);
-      background: linear-gradient(to bottom, white, #f8fbff);
     }
 
     .service-badge {
@@ -2028,101 +1876,11 @@
       color: white;
     }
 
-    .service-icon {
-      position: relative;
-      width: 70px;
-      height: 70px;
-      margin-bottom: 1.5rem;
-    }
-
-    .icon-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: white;
-      border-radius: 50%;
-      z-index: 2;
-    }
-
-    .icon-wrapper i {
-      font-size: 2rem;
-      color: var(--color-accent);
-      transition: transform 0.3s ease;
-    }
-
     .service-card:hover .icon-wrapper i {
       transform: scale(1.1);
     }
 
-    .icon-bg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
-      background: var(--color-secondary);
-      border-radius: 50%;
-      z-index: 1;
-    }
 
-    .service-title {
-      font-size: 1.25rem;
-      color: var(--color-primary);
-      margin-bottom: 1rem;
-      font-weight: 600;
-    }
-
-    .service-description {
-      color: var(--color-primary);
-      opacity: 0.8;
-      line-height: 1.6;
-      margin-bottom: 1.5rem;
-    }
-
-    .service-features {
-      list-style: none;
-      padding: 0;
-      margin: 0 0 1.5rem;
-    }
-
-    .service-features li {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
-      color: var(--color-primary);
-    }
-
-    .service-features i {
-      color: var(--color-accent);
-      font-size: 1rem;
-    }
-
-    .service-price {
-      background: var(--color-secondary);
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
-      margin-bottom: 1.5rem;
-    }
-
-    .price-label {
-      display: block;
-      font-size: 0.9rem;
-      color: var(--color-primary);
-      opacity: 0.8;
-      margin-bottom: 0.25rem;
-    }
-
-    .price-amount {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--color-primary);
-    }
 
     .service-images {
       display: flex;
@@ -2143,33 +1901,6 @@
       color: var(--color-accent);
     }
 
-    .service-cta {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 0.5rem;
-      padding: 1rem;
-      background: var(--color-primary);
-      color: white !important;
-      text-decoration: none;
-      border-radius: 10px;
-      transition: all 0.3s ease;
-      margin-top: auto;
-    }
-
-    .service-cta:hover {
-      background: var(--color-accent);
-      transform: translateY(-2px);
-    }
-
-    .service-cta i {
-      transition: transform 0.3s ease;
-    }
-
-    .service-cta:hover i {
-      transform: translateX(5px);
-    }
-
     @media (max-width: 768px) {
       .additional-services {
         padding: 4rem 0;
@@ -2184,85 +1915,9 @@
       }
     }
 
-    /* Animaciones AOS */
-    [data-aos] {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: all 0.6s ease;
-    }
-
-    [data-aos].aos-animate {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    .service-icon {
-      position: relative;
-      width: 70px;
-      height: 70px;
-      margin-bottom: 1.5rem;
-      z-index: 2;
-      /* Added z-index */
-    }
-
-    .icon-wrapper {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: transparent;
-      margin-inline: auto;
-      /* Changed from white to transparent */
-      border-radius: 50%;
-      z-index: 3;
-      /* Increased z-index */
-    }
-
-    .icon-wrapper i {
-      font-size: 2rem;
-      color: var(--color-accent);
-      transition: transform 0.3s ease;
-      z-index: 4;
-      /* Added z-index */
-    }
-
-    .icon-bg {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 100%;
-      height: 100%;
-      background: var(--color-secondary);
-      border-radius: 50%;
-      z-index: 1;
-      /* Added z-index */
-    }
-
-
     .flexible-section {
       padding: 5rem 0;
       background-color: #f8f9fa;
-    }
-
-    .section-title {
-      text-align: center;
-      color: var(--color-primary);
-      font-size: 2.5rem;
-      margin-bottom: 1.5rem;
-      font-weight: 700;
-    }
-
-    .section-description {
-      text-align: center;
-      max-width: 900px;
-      margin: 0 auto 3rem;
-      color: var(--color-text);
-      line-height: 1.6;
-      font-size: 1.1rem;
-      font-weight: 400;
     }
 
     .flexible-grid {
@@ -2800,13 +2455,7 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
 
-    .map-container {
-      position: relative;
-      height: 500px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    }
+
 
     .map-container iframe {
       position: absolute;
@@ -3891,8 +3540,10 @@
           </div>
           <h3 class="service-title">Atención a eventualidades y Urgencias</h3>
           <p class="service-description">En caso de urgencias o situaciones especiales, como inundaciones, mudanzas,
-            limpieza antes o después de un evento, toc toc tiene opciones puntuales para atender tus necesidades de
-            forma rápida y eficiente.</p>
+            limpieza antes o después de un evento, toc toc tiene opciones puntuales para <strong>atender tus necesidades
+              de forma rápida y eficiente.</strong> No dejes que el desorden interrumpa tu día, estamos aquí para
+            ayudarte.
+          </p>
           <ul class="service-features">
             <li>
               <i class="fas fa-check-circle"></i>
@@ -3920,10 +3571,10 @@
             <div class="icon-bg"></div>
           </div>
           <h3 class="service-title">Limpieza Post Obra</h3>
-          <p class="service-description">Deja las tareas más exigentes en manos expertas. Nuestro equipo post obra
-            elimina restos de polvo, pintura y residuos de construcción, dejando tus espacios listos para habitar.
-            Usamos productos y técnicas especializadas que garantizan resultados impecables sin comprometer tus
-            superficies. Contrata ahora y disfruta de un entorno renovado desde el primer día.
+          <p class="service-description">Deja la limpieza pesada en manos expertas. Nuestro equipo post obra elimina
+            restos de polvo, pintura, y residuos de construcción, dejando tus <strong>espacios listos para
+              habitar.</strong> Usamos productos y técnicas especializadas que garantizan resultados impecables sin
+            dañar tus superficies. Contrata ahora y disfruta de espacios limpios desde el primer día.
           </p>
           <ul class="service-features">
             <li>
@@ -3956,10 +3607,12 @@
             <div class="icon-bg"></div>
           </div>
           <h3 class="service-title">Lavado de muebles, colchones y tapetes</h3>
-          <p class="service-description">Nuestro servicio de lavado de muebles, tapetes y colchones elimina manchas,
-            suciedad, ácaros y malos olores, garantizando un ambiente fresco y saludable en tu hogar. Usamos técnicas
-            avanzadas y productos de alta calidad para preservar los materiales y devolverles su apariencia original.
-            Agenda hoy mismo y transforma tus espacios con resultados impecables.
+          <p class="service-description">Nuestro servicio de lavado de muebles y colchones elimina <strong>manchas,
+              suciedad,
+              ácaros y malos olores,</strong> garantizando un ambiente fresco y saludable en tu hogar. Usamos técnicas
+            avanzadas y
+            productos de alta calidad para preservar los materiales y devolverles su apariencia original. Agenda hoy
+            mismo y transforma tus espacios con resultados impecables.
           </p>
           <ul class="service-features">
             <li>
@@ -4268,10 +3921,8 @@
     </div>
   </section>
 
-
-  <!-- Añadir Swiper JS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', function () {
@@ -4335,7 +3986,6 @@
     });
   </script>
 
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init({
       duration: 800,
@@ -4409,7 +4059,7 @@
         },
         {
           question: "¿Cómo puedo contratar a una colaboradora?",
-          answer: "Contratar es muy fácil. Escríbenos por WhatsApp y un asesor coordinará todos los detalles."
+          answer: "Contratar es muy fácil. Escríbenos por WhatsApp y un <strong>asesor coordinará todos los detalles.</strong>"
         },
         {
           question: "¿Tienen disponibilidad para limpieza de emergencia?",
