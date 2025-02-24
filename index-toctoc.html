@@ -60,7 +60,6 @@
     }
 
     /* Tipografía */
-    h1,
     h2,
     h3,
     h4,
@@ -69,11 +68,6 @@
       color: var(--color-primary);
       font-weight: 500;
       line-height: 1.2;
-    }
-
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 1.5rem;
     }
 
     h2 {
@@ -971,6 +965,9 @@
       padding: 2rem;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
       transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .city-card:hover {
@@ -1979,15 +1976,13 @@
       color: var(--color-text);
       margin-bottom: 1.5rem;
       line-height: 1.5;
-      flex-grow: 1;
     }
-
-    /* Estilos existentes se mantienen igual */
 
     /* Estilos para el manejo del slider en mobile */
     .mobile-slider {
       display: none;
       width: 100%;
+      height: 520px;
       padding: 20px 0 40px;
     }
 
@@ -2029,13 +2024,16 @@
         display: none;
       }
 
+      .benefits-grid {
+        display: none;
+      }
+
       .mobile-slider {
         display: block;
       }
 
       .flexible-card {
         margin: 0;
-        height: 100%;
       }
 
       .section-description {
@@ -2068,7 +2066,6 @@
     .aliado-section {
       padding: 6rem 0;
       background: var(--color-secondary);
-      position: relative;
       overflow: hidden;
     }
 
@@ -2145,6 +2142,7 @@
 
       .aliado-image {
         order: -1;
+        flex: none;
       }
     }
 
@@ -2512,10 +2510,6 @@
         display: none;
       }
 
-      h1 {
-        font-size: 2rem;
-      }
-
       h2 {
         font-size: 1.75rem;
       }
@@ -2554,10 +2548,10 @@
     <div class="container-landing hero-container">
       <div class="hero-content">
         <div class="hero-text">
-          <h1 class="hero-title">
+          <h2 class="hero-title">
             <span class="hero-title-highlight">Empleada doméstica</span>
             confiable para un hogar siempre limpio
-          </h1>
+          </h2>
           <div class="hero-description">
             <p>¿Te imaginas volver a casa y encontrar cada rincón impecable, sin haber levantado un solo dedo? En toc
               toc aseo, hacemos de esto una realidad a través de nuestras <strong>empleadas domésticas</strong>.</p>
@@ -2776,6 +2770,226 @@
           </div>
         </div>
       </div>
+
+      <!-- Slider para Mobile -->
+      <div class="swiper mobile-slider">
+        <div class="swiper-wrapper">
+          <!-- Las mismas cards pero dentro de swiper-slide -->
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Personal capacitado</h3>
+              <p class="benefit-description">Nuestro equipo pasa por rigurosas <strong>capacitaciones y evaluaciones
+                  constantes</strong> para
+                brindarte un servicio profesional y de calidad. Una limpieza profesional con un toque humano</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Aseo garantizado en tu hogar</h3>
+              <p class="benefit-description">Entendemos tus gustos y preferencias. Nos aseguramos de <strong>cumplir con
+                  los
+                  más
+                  altos estándares</strong> para que quedes 100% satisfecho con nuestros resultados.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Tranquilidad legal y laboral</h3>
+              <p class="benefit-description">Todas nuestras profesionales están contratadas con <strong>todas las
+                  prestaciones de ley al día</strong>. Olvídate de las preocupaciones legales y disfruta de un equipo
+                seguro
+                y responsable.
+              </p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Estamos contigo en momentos importantes</h3>
+              <p class="benefit-description">Desde <strong>limpiezas urgentes hasta apoyo en situaciones
+                  especiales</strong>
+                como mudanzas o
+                después de una fiesta, toc toc aseo está siempre listo para ayudarte.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-user-check"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Selección confiable de nuestro equipo</h3>
+              <p class="benefit-description">Tu seguridad es prioridad. Elegimos a nuestras profesionales con estrictos
+                filtros de selección para garantizar confianza y excelencia en cada tarea.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Respaldo de Elite Soluciones</h3>
+              <p class="benefit-description">toc toc aseo cuenta con el respaldo de <strong>Élite Soluciones</strong>,
+                con
+                más de 35 años de
+                experiencia en el sector. Sabemos cómo brindar apoyo confiable y de calidad a nuestros clientes,
+                garantizando siempre su tranquilidad.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- ... Repetir para cada card ... -->
+        </div>
+        <!-- Navegación del slider -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="impact-section" id="impacto-social">
+    <div class="container-landing">
+      <div class="impact-content">
+        <div class="impact-text" data-aos="fade-right">
+          <div class="impact-header">
+            <div class="impact-badge">
+              <i class="fas fa-heart"></i>
+              <span>Impacto Social</span>
+            </div>
+            <h2 class="impact-title">
+              Más que limpieza, oportunidades:
+              <span class="highlight">apoyamos a madres cabeza de familia</span>
+            </h2>
+          </div>
+
+          <div class="impact-stats">
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter">500</span>+</div>
+              <div class="stat-label">Madres empleadas</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter">1500</span>+</div>
+              <div class="stat-label">Vidas impactadas</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter">100</span>%</div>
+              <div class="stat-label">Empleo formal</div>
+            </div>
+          </div>
+
+          <p class="impact-description">
+            Cada servicio que contratas en <strong>toc toc aseo</strong> apoya a <strong>madres cabeza de
+              familia,</strong>
+            brindándoles empleo formal y estabilidad. Creemos en el trabajo digno y en
+            oportunidades que transforman vidas.
+          </p>
+
+          <div class="impact-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Contratos formales con todas las prestaciones</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Capacitación y desarrollo profesional</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Horarios flexibles para madres</span>
+            </div>
+          </div>
+
+          <blockquote class="impact-testimonial">
+            <p>"Gracias a toc toc aseo, no solo tengo un trabajo estable, sino también la
+              oportunidad de dar un mejor futuro a mis hijos."</p>
+            <cite>- María González, colaboradora desde 2020</cite>
+          </blockquote>
+
+          <p class="impact-cta-text">
+            Haz que tu tiempo libre sea realmente tuyo, nosotros nos encargamos del resto.
+          </p>
+
+          <div class="impact-actions">
+            <a href="#contacto" class="btn-primary">
+              <span>¡Contáctanos!</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#testimonios" class="btn-secondary">
+              <i class="fas fa-star"></i>
+              <span>Ver testimonios</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="impact-visual" data-aos="fade-left">
+          <div class="impact-image-wrapper">
+            <img src="http://toctocaseo.com/wp-content/uploads/2022/04/image.png" alt="Impacto social en la comunidad"
+              class="impact-image">
+            <div class="impact-badge-floating">
+              <div class="badge-content">
+                <i class="fas fa-heart"></i>
+                <span>Cambiando vidas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -2920,7 +3134,7 @@
           </a>
         </div>
       </div>
-      <div class="services-header">
+      <div class="services-header" data-aos="fade-up" data-aos-delay="400">
         <h2 class="section-title">Respaldo de una empresa con experiencia</h2>
         <p class="section-description">Más de 35 años brindando confianza en aseo</p>
         <p class="section-subtitle">toc toc aseo cuenta con el respaldo de <strong>Élite Soluciones</strong>, con más de
@@ -3046,303 +3260,6 @@
               <i class="fas fa-headset"></i>
               <span>Contactar ahora</span>
             </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="coverage-section" id="cobertura">
-    <div class="container-landing">
-      <div class="coverage-header">
-        <h2 class="section-title">Respaldo de una empresa con experiencia</h2>
-        <p class="section-description"><strong>Más de 35 años brindando confianza en aseo</strong></p>
-        <p>toc toc aseo cuenta con el respaldo de Élite Soluciones, con más de 35 años de experiencia en el sector.
-          Sabemos cómo brindar un servicio confiable y de calidad a nuestros clientes, garantizando siempre su
-          tranquilidad.</p>
-      </div>
-      <div class="coverage-header">
-        <h2 class="section-title">Cobertura en Colombia</h2>
-        <p class="section-description">Brindamos servicios profesionales de limpieza en las principales ciudades del
-          país</p>
-      </div>
-
-      <div class="coverage-content">
-        <div class="coverage-grid">
-          <div class="city-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="city-header">
-              <div class="city-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="city-status active">
-                <span class="status-dot"></span>
-                Disponible
-              </div>
-            </div>
-            <h3 class="city-name">Bogotá</h3>
-            <p class="city-description">Servicio doméstico confiable a tu alcance.</p>
-            <p>En la capital, ofrecemos soluciones de limpieza y cuidado del hogar con <strong>personal altamente
-                capacitado</strong>.
-              Vive la tranquilidad de un equipo profesional y seguro.</p>
-            <div class="city-features">
-              <div class="feature">
-                <i class="fas fa-clock"></i>
-                <span>Servicio 24/7</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-user-friends"></i>
-                <span>Personal local</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-phone"></i>
-                <span>Soporte inmediato</span>
-              </div>
-            </div>
-            <a href="#contacto" class="city-cta">
-              <span>Agenda ahora Bogotá</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <div class="city-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="city-header">
-              <div class="city-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="city-status active">
-                <span class="status-dot"></span>
-                Disponible
-              </div>
-            </div>
-            <h3 class="city-name">Medellín</h3>
-            <p class="city-description">La mejor opción para tu hogar.</p>
-            <p>Disfruta de un apoyo doméstico personalizado en la ciudad de la eterna primavera. Nuestro equipo asegura
-              <strong>espacios impecables</strong> para que tú disfrutes lo que realmente importa.
-            </p>
-            <div class="city-features">
-              <div class="feature">
-                <i class="fas fa-clock"></i>
-                <span>Servicio 24/7</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-user-friends"></i>
-                <span>Personal local</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-phone"></i>
-                <span>Soporte inmediato</span>
-              </div>
-            </div>
-            <a href="#contacto" class="city-cta">
-              <span>Reserva en Medellín</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <div class="city-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="city-header">
-              <div class="city-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="city-status active">
-                <span class="status-dot"></span>
-                Disponible
-              </div>
-            </div>
-            <h3 class="city-name">Cali</h3>
-            <p class="city-description">Limpieza profesional al calor del Valle.</p>
-            <p>Llevamos a Cali un apoyo doméstico que combina <strong>calidad, confianza y atención al detalle.</strong>
-              Deja tu casa o
-              apartamento en manos de expertas.
-            </p>
-            <div class="city-features">
-              <div class="feature">
-                <i class="fas fa-clock"></i>
-                <span>Servicio 24/7</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-user-friends"></i>
-                <span>Personal local</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-phone"></i>
-                <span>Soporte inmediato</span>
-              </div>
-            </div>
-            <a href="#contacto" class="city-cta">
-              <span>Solicita información</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-
-          <div class="city-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="city-header">
-              <div class="city-icon">
-                <i class="fas fa-map-marker-alt"></i>
-              </div>
-              <div class="city-status active">
-                <span class="status-dot"></span>
-                Disponible
-              </div>
-            </div>
-            <h3 class="city-name">Bucaramanga</h3>
-            <p class="city-description">Soluciones para hogares impecables.</p>
-            <p>En la ciudad bonita, ofrecemos ayuda doméstica que se <strong>adapta a tus necesidades.</strong> Confía
-              en nuestras
-              profesionales para mantener tu casa o apartamento limpio y organizado.</p>
-            <div class="city-features">
-              <div class="feature">
-                <i class="fas fa-clock"></i>
-                <span>Servicio 24/7</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-user-friends"></i>
-                <span>Personal local</span>
-              </div>
-              <div class="feature">
-                <i class="fas fa-phone"></i>
-                <span>Soporte inmediato</span>
-              </div>
-            </div>
-            <a href="#contacto" class="city-cta">
-              <span>Agenda ya</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="contact-section" id="contacto">
-    <div class="container-landing">
-      <div class="contact-grid">
-        <!-- Información de contacto -->
-        <div class="contact-info">
-          <h2 class="contact-title">Contáctanos y contrata hoy</h2>
-          <p class="contact-description">
-            No esperes más, agenda tu servicio y mejora así tu calidad de vida. Disfruta de espacios limpios y ordenados
-            con el <strong>respaldo y profesionalismo</strong> de toc toc aseo.
-          </p>
-
-          <div class="contact-details">
-            <h3>Información de contacto</h3>
-            <div class="contact-item">
-              <i class="fas fa-phone"></i>
-              <a href="tel:+5712345789" class="contact-link">+57 123 456 7890</a>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:info@toctocaseo.com" class="contact-link">info@toctocaseo.com</a>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Calle Principal #123, Bogotá, Colombia</span>
-            </div>
-
-            <div class="social-links">
-              <a href="#" class="social-link" aria-label="Facebook">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-link" aria-label="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="social-link" aria-label="Twitter">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-link" aria-label="LinkedIn">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="impact-section" id="impacto-social">
-    <div class="container-landing">
-      <div class="impact-content">
-        <div class="impact-text" data-aos="fade-right">
-          <div class="impact-header">
-            <div class="impact-badge">
-              <i class="fas fa-heart"></i>
-              <span>Impacto Social</span>
-            </div>
-            <h2 class="impact-title">
-              Más que limpieza, oportunidades:
-              <span class="highlight">apoyamos a madres cabeza de familia</span>
-            </h2>
-          </div>
-
-          <div class="impact-stats">
-            <div class="stat-item">
-              <div class="stat-number"><span class="counter">500</span>+</div>
-              <div class="stat-label">Madres empleadas</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number"><span class="counter">1500</span>+</div>
-              <div class="stat-label">Vidas impactadas</div>
-            </div>
-            <div class="stat-item">
-              <div class="stat-number"><span class="counter">100</span>%</div>
-              <div class="stat-label">Empleo formal</div>
-            </div>
-          </div>
-
-          <p class="impact-description">
-            Cada servicio que contratas en toc toc aseo apoya a madres cabeza de familia,
-            brindándoles empleo formal y estabilidad. Creemos en el trabajo digno y en
-            oportunidades que transforman vidas.
-          </p>
-
-          <div class="impact-features">
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Contratos formales con todas las prestaciones</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Capacitación y desarrollo profesional</span>
-            </div>
-            <div class="feature">
-              <i class="fas fa-check-circle"></i>
-              <span>Horarios flexibles para madres</span>
-            </div>
-          </div>
-
-          <blockquote class="impact-testimonial">
-            <p>"Gracias a toc toc aseo, no solo tengo un trabajo estable, sino también la
-              oportunidad de dar un mejor futuro a mis hijos."</p>
-            <cite>- María González, colaboradora desde 2020</cite>
-          </blockquote>
-
-          <p class="impact-cta-text">
-            Haz que tu tiempo libre sea realmente tuyo, nosotros nos encargamos del resto.
-          </p>
-
-          <div class="impact-actions">
-            <a href="#contacto" class="btn-primary">
-              <span>¡Contáctanos!</span>
-              <i class="fas fa-arrow-right"></i>
-            </a>
-            <a href="#testimonios" class="btn-secondary">
-              <i class="fas fa-star"></i>
-              <span>Ver testimonios</span>
-            </a>
-          </div>
-        </div>
-
-        <div class="impact-visual" data-aos="fade-left">
-          <div class="impact-image-wrapper">
-            <img src="http://toctocaseo.com/wp-content/uploads/2022/04/image.png" alt="Impacto social en la comunidad"
-              class="impact-image">
-            <div class="impact-badge-floating">
-              <div class="badge-content">
-                <i class="fas fa-heart"></i>
-                <span>Cambiando vidas</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -3637,6 +3554,214 @@
     </div>
   </section>
 
+  <section class="coverage-section" id="cobertura">
+    <div class="container-landing">
+      <div class="coverage-header">
+        <h2 class="section-title">Respaldo de una empresa con experiencia</h2>
+        <p class="section-description"><strong>Más de 35 años brindando confianza en aseo</strong></p>
+        <p>toc toc aseo cuenta con el respaldo de Élite Soluciones, con más de 35 años de experiencia en el sector.
+          Sabemos cómo brindar un servicio confiable y de calidad a nuestros clientes, garantizando siempre su
+          tranquilidad.</p>
+      </div>
+      <div class="coverage-header">
+        <h2 class="section-title">Cobertura en Colombia</h2>
+        <p class="section-description">Brindamos servicios profesionales de limpieza en las principales ciudades del
+          país</p>
+      </div>
+
+      <div class="coverage-content">
+        <div class="coverage-grid">
+          <div class="city-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Bogotá</h3>
+            <p class="city-description">Servicio doméstico confiable a tu alcance.</p>
+            <p>En la capital, ofrecemos soluciones de limpieza y cuidado del hogar con <strong>personal altamente
+                capacitado</strong>.
+              Vive la tranquilidad de un equipo profesional y seguro.</p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-clock"></i>
+                <span>Servicio 24/7</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="#contacto" class="city-cta">
+              <span>Agenda ahora Bogotá</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Medellín</h3>
+            <p class="city-description">La mejor opción para tu hogar.</p>
+            <p>Disfruta de un apoyo doméstico personalizado en la ciudad de la eterna primavera. Nuestro equipo asegura
+              <strong>espacios impecables</strong> para que tú disfrutes lo que realmente importa.
+            </p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-clock"></i>
+                <span>Servicio 24/7</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="#contacto" class="city-cta">
+              <span>Reserva en Medellín</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Cali</h3>
+            <p class="city-description">Limpieza profesional al calor del Valle.</p>
+            <p>Llevamos a Cali un apoyo doméstico que combina <strong>calidad, confianza y atención al detalle.</strong>
+              Deja tu casa o
+              apartamento en manos de expertas.
+            </p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-clock"></i>
+                <span>Servicio 24/7</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="#contacto" class="city-cta">
+              <span>Solicita información</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Bucaramanga</h3>
+            <p class="city-description">Soluciones para hogares impecables.</p>
+            <p>En la ciudad bonita, ofrecemos ayuda doméstica que se <strong>adapta a tus necesidades.</strong> Confía
+              en nuestras
+              profesionales para mantener tu casa o apartamento limpio y organizado.</p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-clock"></i>
+                <span>Servicio 24/7</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="#contacto" class="city-cta">
+              <span>Agenda ya</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contacto">
+    <div class="container-landing">
+      <div class="contact-grid">
+        <!-- Información de contacto -->
+        <div class="contact-info">
+          <h2 class="contact-title">Contáctanos y contrata hoy</h2>
+          <p class="contact-description">
+            No esperes más, agenda tu servicio y mejora así tu calidad de vida. Disfruta de espacios limpios y ordenados
+            con el <strong>respaldo y profesionalismo</strong> de toc toc aseo.
+          </p>
+
+          <div class="contact-details">
+            <h3>Información de contacto</h3>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+5712345789" class="contact-link">+57 123 456 7890</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:info@toctocaseo.com" class="contact-link">info@toctocaseo.com</a>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Calle Principal #123, Bogotá, Colombia</span>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section class="flexible-section">
     <div class="container-landing">
       <h2 class="section-title">Somos flexibles</h2>
@@ -3658,7 +3783,7 @@
           <p>Cuando necesitas apoyo en tareas específicas o momentos puntuales, una <strong>colaboradora por días es
               ideal.</strong>
             Nuestro equipo profesional está listo para ayudarte cuando lo necesites.</p>
-          <button class="btn-primary">Reserva hoy</button>
+          <button class="service-cta">Reserva hoy</button>
         </div>
 
         <!-- Card 2 -->
@@ -3669,7 +3794,7 @@
           <h3>Lunes a viernes y sábados</h3>
           <p>Disfruta de la tranquilidad de contar con una colaboradora de lunes a viernes que se encargue de las tareas
             diarias. Nuestras profesionales capacitadas aseguran un espacio impecable y ordenado cada día.</p>
-          <button class="btn-primary">Contrata ahora</button>
+          <button class="service-cta">Contrata ahora</button>
         </div>
 
         <!-- Card 3 -->
@@ -3680,7 +3805,7 @@
           <h3>Servicios una vez a la semana</h3>
           <p>Si buscas mantener la <strong>limpieza y el orden con regularidad,</strong> nuestras colaboradoras pueden
             asistir una vez a la semana, adaptándose a tus necesidades.</p>
-          <button class="btn-primary">Asignar día de limpieza</button>
+          <button class="service-cta">Asignar día de limpieza</button>
         </div>
 
         <!-- Card 4 -->
@@ -3691,7 +3816,7 @@
           <h3>Apoyo medio tiempo</h3>
           <p>Para quienes necesitan ayuda constante pero no todo el día, nuestra opción de medio tiempo <strong>se
               ajusta a tus horarios y prioridades.</strong></p>
-          <button class="btn-primary">Agenda tu apoyo</button>
+          <button class="service-cta">Agenda tu apoyo</button>
         </div>
 
         <!-- Card 5 -->
@@ -3702,7 +3827,7 @@
           <h3>Atención de tiempo completo</h3>
           <p>Para viviendas que requieren cuidado constante, ofrecemos apoyo a tiempo completo, cuidando <strong>cada
               detalle y garantizando tu tranquilidad.</strong></p>
-          <button class="btn-primary">Contrata hoy mismo</button>
+          <button class="service-cta">Contrata hoy mismo</button>
         </div>
 
         <!-- Card 6 -->
@@ -3715,7 +3840,7 @@
               profundas
               hasta tareas específicas,</strong> garantizamos calidad y profesionalismo.
           </p>
-          <button class="btn-primary">Reserva ya</button>
+          <button class="service-cta">Reserva ya</button>
         </div>
 
         <!-- Card 7 -->
@@ -3726,7 +3851,7 @@
           <h3>Doméstica externa</h3>
           <p>La opción ideal para quienes prefieren un <strong>apoyo diario o por horas sin permanencia.</strong>
             Nuestras colaboradoras externas son profesionales que garantizan resultados excelentes.</p>
-          <button class="btn-primary">Contáctanos hoy</button>
+          <button class="service-cta">Contáctanos hoy</button>
         </div>
 
         <!-- Card 8 -->
@@ -3737,7 +3862,7 @@
           <h3>Servicio por mes</h3>
           <p>Para cuidado constante, nuestro plan mensual asegura una <strong>casa o apartamento impecable todo el
               tiempo.</strong> Nuestras profesionales se adaptan a tus necesidades, ofreciéndote tranquilidad.</p>
-          <button class="btn-primary">Agenda tu plan mensual</button>
+          <button class="service-cta">Agenda tu plan</button>
         </div>
       </div>
 
@@ -3755,7 +3880,7 @@
               <p>Cuando necesitas apoyo en tareas específicas o momentos puntuales, una <strong>colaboradora por días es
                   ideal.</strong>
                 Nuestro equipo profesional está listo para ayudarte cuando lo necesites.</p>
-              <button class="btn-primary">Reserva hoy</button>
+              <button class="service-cta">Reserva hoy</button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -3768,7 +3893,7 @@
               <p>Disfruta de la tranquilidad de contar con una colaboradora de lunes a viernes que se encargue de las
                 tareas
                 diarias. Nuestras profesionales capacitadas aseguran un espacio impecable y ordenado cada día.</p>
-              <button class="btn-primary">Contrata ahora</button>
+              <button class="service-cta">Contrata ahora</button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -3781,7 +3906,7 @@
               <p>Si buscas mantener la <strong>limpieza y el orden con regularidad,</strong> nuestras colaboradoras
                 pueden
                 asistir una vez a la semana, adaptándose a tus necesidades.</p>
-              <button class="btn-primary">Asignar día de limpieza</button>
+              <button class="service-cta">Asignar día de limpieza</button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -3793,7 +3918,7 @@
               <h3>Apoyo medio tiempo</h3>
               <p>Para quienes necesitan ayuda constante pero no todo el día, nuestra opción de medio tiempo <strong>se
                   ajusta a tus horarios y prioridades.</strong></p>
-              <button class="btn-primary">Agenda tu apoyo</button>
+              <button class="service-cta">Agenda tu apoyo</button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -3807,7 +3932,7 @@
                 <strong>cada
                   detalle y garantizando tu tranquilidad.</strong>
               </p>
-              <button class="btn-primary">Contrata hoy mismo</button>
+              <button class="service-cta">Contrata hoy mismo</button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -3821,7 +3946,7 @@
                   profundas
                   hasta tareas específicas,</strong> garantizamos calidad y profesionalismo.
               </p>
-              <button class="btn-primary">Reserva ya</button>
+              <button class="service-cta">Reserva ya</button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -3833,7 +3958,7 @@
               <h3>Doméstica externa</h3>
               <p>La opción ideal para quienes prefieren un <strong>apoyo diario o por horas sin permanencia.</strong>
                 Nuestras colaboradoras externas son profesionales que garantizan resultados excelentes.</p>
-              <button class="btn-primary">Contáctanos hoy</button>
+              <button class="service-cta">Contáctanos hoy</button>
             </div>
           </div>
           <div class="swiper-slide">
@@ -3845,7 +3970,7 @@
               <h3>Servicio por mes</h3>
               <p>Para cuidado constante, nuestro plan mensual asegura una <strong>casa o apartamento impecable todo el
                   tiempo.</strong> Nuestras profesionales se adaptan a tus necesidades, ofreciéndote tranquilidad.</p>
-              <button class="btn-primary">Agenda tu plan mensual</button>
+              <button class="service-cta">Agenda tu plan</button>
             </div>
           </div>
           <!-- ... Repetir para cada card ... -->
