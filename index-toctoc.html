@@ -208,6 +208,17 @@
       margin-bottom: 2rem;
     }
 
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .hero-image {
+      position: relative;
+      animation: fadeInRight 0.8s ease-out;
+    }
+
     .stat-item {
       display: flex;
       flex-direction: column;
@@ -220,12 +231,6 @@
       font-weight: 400;
       color: var(--color-primary);
       opacity: 0.8;
-    }
-
-    .hero-cta {
-      display: flex;
-      gap: 1rem;
-      margin-top: 2rem;
     }
 
     .btn-primary:hover {
@@ -242,11 +247,6 @@
     .btn-secondary:hover {
       background: var(--color-primary);
       color: white;
-    }
-
-    .hero-image {
-      position: relative;
-      animation: fadeInRight 0.8s ease-out;
     }
 
     .main-image {
@@ -325,7 +325,7 @@
       }
 
       .hero-image {
-        order: -1;
+        order: 2;
       }
     }
 
@@ -1505,6 +1505,12 @@
       border-radius: 50px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
       animation: float 3s ease-in-out infinite;
+    }
+
+    @media (max-width: 768px) {
+      .impact-badge-floating {
+        display: none;
+      }
     }
 
     .trust-indicators {
@@ -3720,18 +3726,10 @@
           </p>
 
           <div class="contact-details">
-            <h3>Información de contacto</h3>
+            <h3>Línea WhatsApp</h3>
             <div class="contact-item">
-              <i class="fas fa-phone"></i>
-              <a href="tel:+5712345789" class="contact-link">+57 123 456 7890</a>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-envelope"></i>
-              <a href="mailto:info@toctocaseo.com" class="contact-link">info@toctocaseo.com</a>
-            </div>
-            <div class="contact-item">
-              <i class="fas fa-map-marker-alt"></i>
-              <span>Calle Principal #123, Bogotá, Colombia</span>
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.me/573123456789" class="contact-link">+57 312 345 6789</a>
             </div>
 
             <div class="social-links">
@@ -4044,7 +4042,7 @@
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       if (window.innerWidth <= 768) {
-        const swiper = new Swiper('.mobile-slider', {
+        return new Swiper('.mobile-slider', {
           slidesPerView: 'auto',
           spaceBetween: 20,
           centeredSlides: true,
@@ -4074,7 +4072,7 @@
     window.addEventListener('resize', function () {
       if (window.innerWidth <= 768) {
         if (!document.querySelector('.swiper').swiper) {
-          const swiper = new Swiper('.mobile-slider', {
+          return new Swiper('.mobile-slider', {
             // ... mismas opciones que arriba
             slidesPerView: 'auto',
             spaceBetween: 20,
