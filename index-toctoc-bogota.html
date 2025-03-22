@@ -1,0 +1,4151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empleadas domésticas Bogotá: Servicio Profesional a tu medida</title>
+  <meta name="description"
+    content="Empleadas domésticas en Bogotá para brindar limpieza profesional a tu medida. Ahorra tiempo y disfruta de un hogar impecable. Contáctanos hoy mismo.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <style>
+    /* Reset y variables */
+    :root {
+      --color-primary: #13224a;
+      --color-secondary: #E6F4FF;
+      --color-accent: #00B6FF;
+      --font-primary: 'Roboto', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .page-id-2906 .ld-page__title {
+      display: none;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      color: var(--color-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    main .container {
+      margin-inline: 0;
+      padding-inline: 0;
+      width: 100%;
+      max-width: none !important;
+    }
+
+    /* Layout */
+    .container-landing {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Tipografía */
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--color-primary);
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--color-primary);
+      opacity: 0.9;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    /* Navegación */
+    .nav-container {
+      background: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      padding: 1rem 0;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-accent);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 6rem 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #E6F4FF 0%, #ffffff 100%);
+      z-index: 1;
+    }
+
+    .hero-background::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 50%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-text {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 2rem;
+      color: var(--color-primary);
+    }
+
+    .hero-title-highlight {
+      display: block;
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    .hero-description {
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-description p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--color-primary);
+      opacity: 0.9;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .hero-image {
+      position: relative;
+      animation: fadeInRight 0.8s ease-out;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--color-primary);
+      opacity: 0.8;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(19, 34, 74, 0.3);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(19, 34, 74, 0.1);
+    }
+
+    .trust-badge {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 30px rgba(19, 34, 74, 0.1);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .badge-content {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .badge-content i {
+      color: var(--color-accent);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-image {
+        order: 2;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 4rem 0;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    /* Secciones con formas */
+    .section {
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-wave {
+      background: var(--color-secondary);
+    }
+
+    .section-wave::before,
+    .section-wave::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: white;
+    }
+
+    .section-wave::before {
+      top: 0;
+      border-radius: 0 0 50% 50%;
+    }
+
+    .section-wave::after {
+      bottom: 0;
+      border-radius: 50% 50% 0 0;
+    }
+
+    /* Quick Nav */
+    .nav-tabs {
+      position: relative;
+      background: white;
+      padding: 1rem 0;
+      margin: 2rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-tabs-container {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      /* Espacio para los botones de navegación */
+    }
+
+    .nav-tabs-scroll {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .nav-tabs-wrapper {
+      display: flex;
+      gap: 1rem;
+      transition: transform 0.3s ease;
+      padding: 0.5rem 0;
+    }
+
+    .nav-tab {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      white-space: nowrap;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .nav-tab:hover {
+      background: var(--color-secondary);
+      transform: translateY(-2px);
+    }
+
+    .nav-tab.active {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .nav-tab i {
+      font-size: 1.2rem;
+    }
+
+    .nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: all 0.3s ease;
+    }
+
+    .nav-arrow:hover {
+      background: var(--color-secondary);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-arrow-left {
+      left: 0;
+    }
+
+    .nav-arrow-right {
+      right: 0;
+    }
+
+    .nav-arrow i {
+      color: var(--color-primary);
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-tabs-container {
+        padding: 0 35px;
+      }
+
+      .nav-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    .services-grid {
+      margin: 3rem 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Quick Links */
+    .quick-links {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding: 1rem 0;
+      margin: 2rem 0;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .quick-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      border-radius: 50px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      text-decoration: none;
+      color: var(--color-primary);
+      white-space: nowrap;
+      transition: transform 0.3s ease;
+    }
+
+    .quick-link:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Por qué escogernos */
+    .why-choose {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #E6F4FF 0%, #ffffff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-choose::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .benefit-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .benefit-card:hover::before {
+      opacity: 1;
+    }
+
+    .benefit-icon {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1.5rem;
+      margin-inline: auto;
+    }
+
+
+    .benefit-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .benefit-description {
+      color: var(--color-primary);
+      opacity: 0.8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .benefit-footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .benefit-check {
+      color: var(--color-accent);
+      font-size: 1.2rem;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .benefit-card:hover .benefit-check {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .why-choose {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: white !important;
+      border: 2px solid var(--color-primary);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+      margin-block-start: 1rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .services-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 80%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .services-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-subtitle {
+      color: var(--color-primary);
+      opacity: 0.8;
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card.featured {
+      border: 2px solid var(--color-accent);
+      background: linear-gradient(to bottom, white, #f8fbff);
+    }
+
+    .service-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-icon {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      background: var(--color-secondary);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      margin-bottom: 1.5rem;
+      z-index: 2;
+    }
+
+    .service-card:hover .service-icon {
+      transform: scale(1.1);
+      background: var(--color-accent);
+    }
+
+    .service-icon i {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover .service-icon i {
+      color: var(--color-primary);
+    }
+
+    .service-tag {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      background: var(--color-secondary);
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .service-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .service-description {
+      color: var(--color-primary);
+      font-weight: 400;
+      opacity: 0.8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .service-features i {
+      color: var(--color-accent);
+      font-size: 1rem;
+    }
+
+    .service-price {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: var(--color-secondary);
+      border-radius: 10px;
+    }
+
+    .price-label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      opacity: 0.8;
+      margin-bottom: 0.25rem;
+    }
+
+    .price-amount {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    .price-period {
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      opacity: 0.8;
+    }
+
+    .price-contact {
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+
+    .service-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    .service-cta:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .service-cta i {
+      transition: transform 0.3s ease;
+    }
+
+    .service-cta:hover i {
+      transform: translateX(5px);
+    }
+
+    @media (max-width: 768px) {
+      .services-section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .section-description {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      color: var(--color-text);
+      line-height: 1.6;
+      font-size: 1.1rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .coverage-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
+    .coverage-map {
+      position: relative;
+      height: 400px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .map-container {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .map-markers {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-marker {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      transform: translate(-50%, -50%);
+    }
+
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .city-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .city-card p {
+      font-weight: 400;
+    }
+
+    .city-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .city-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .city-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--color-secondary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .city-card:hover .city-icon {
+      background: var(--color-accent);
+    }
+
+    .city-icon i {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      transition: all 0.3s ease;
+    }
+
+    .city-card:hover .city-icon i {
+      color: white;
+    }
+
+    .city-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: #22c55e;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+
+    .city-name {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .city-description {
+      color: var(--color-primary);
+      font-weight: 400;
+      opacity: 0.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .city-features {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .feature i {
+      color: var(--color-accent);
+      font-size: 1rem;
+    }
+
+    .city-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .city-cta:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .city-cta i {
+      transition: transform 0.3s ease;
+    }
+
+    .city-cta:hover i {
+      transform: translateX(5px);
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .coverage-map {
+        height: 300px;
+      }
+
+      .coverage-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Oportunidades Section */
+    .oportunidades-section {
+      background: var(--color-secondary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .oportunidades-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -20%;
+      width: 80%;
+      height: 200%;
+      background: white;
+      border-radius: 50%;
+      transform: rotate(10deg);
+    }
+
+    .oportunidades-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .oportunidades-image img {
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .training-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .training-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 80%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .training-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .training-stats {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .training-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .training-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .training-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-icon {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1.5rem;
+      margin-inline: auto;
+    }
+
+    .icon-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 50%;
+      z-index: 3;
+      margin-inline: auto;
+    }
+
+    .icon-wrapper i {
+      font-size: 2rem;
+      color: var(--color-accent);
+      transition: transform 0.3s ease;
+      z-index: 4;
+    }
+
+    .training-card:hover .icon-wrapper i {
+      transform: scale(1.1);
+    }
+
+    .icon-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: var(--color-secondary);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .card-description {
+      color: var(--color-primary);
+      font-weight: 400;
+      opacity: 0.8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .training-features {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-indicator {
+      background: var(--color-secondary);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-top: auto;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: var(--color-accent);
+      border-radius: 3px;
+      margin-bottom: 0.5rem;
+    }
+
+    .certification-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-secondary);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: auto;
+      color: var(--color-primary);
+    }
+
+    .certification-badge i {
+      color: var(--color-accent);
+      font-size: 1.5rem;
+    }
+
+    .btn-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    .btn-contact:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .training-section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .training-stats {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .training-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Animaciones para los números */
+    @keyframes countUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .counter {
+      animation: countUp 1s ease-out forwards;
+    }
+
+    .impact-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .impact-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .impact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .impact-header {
+      margin-bottom: 2rem;
+    }
+
+    .impact-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--color-secondary);
+      border-radius: 20px;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .impact-badge i {
+      color: var(--color-accent);
+    }
+
+    .impact-title {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: 2rem;
+    }
+
+    .impact-title .highlight {
+      display: block;
+      color: var(--color-accent);
+    }
+
+    .impact-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .impact-description {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--color-primary);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .impact-features {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .impact-testimonial {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+
+    .impact-testimonial p {
+      font-style: italic;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .impact-testimonial cite {
+      color: var(--color-primary);
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    .impact-cta-text {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--color-primary);
+      margin-bottom: 2rem;
+    }
+
+    .impact-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .impact-visual {
+      position: relative;
+    }
+
+    .impact-image-wrapper {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .impact-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .impact-image-wrapper:hover .impact-image {
+      transform: scale(1.05);
+    }
+
+    .impact-badge-floating {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @media (max-width: 768px) {
+      .impact-badge-floating {
+        display: none;
+      }
+    }
+
+    .trust-indicators {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .trust-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .trust-logo {
+      height: 40px;
+      width: auto;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .impact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .impact-visual {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .impact-section {
+        padding: 4rem 0;
+      }
+
+      .impact-title {
+        font-size: 2rem;
+      }
+
+      .impact-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .impact-actions {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    .testimonials-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 80%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .testimonials-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .testimonials-stats {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 2rem;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-stars {
+      color: #FFD700;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-icon {
+      font-size: 2rem;
+      color: var(--color-accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .testimonials-slider {
+      position: relative;
+      margin: 0 -1rem;
+      padding: 0 1rem;
+    }
+
+    .testimonials-track {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .client-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .client-avatar {
+      position: relative;
+      width: 60px;
+      height: 60px;
+    }
+
+    .client-avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.7rem;
+      border: 2px solid white;
+    }
+
+    .client-details {
+      flex-grow: 1;
+    }
+
+    .client-name {
+      font-size: 1.1rem;
+      color: var(--color-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .client-location {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      opacity: 0.8;
+    }
+
+    .service-type {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+      background: var(--color-secondary);
+      border-radius: 20px;
+      color: var(--color-primary);
+    }
+
+    .testimonial-content {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .quote-icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--color-accent);
+      opacity: 0.2;
+      font-size: 1.5rem;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: var(--color-primary);
+      line-height: 1.6;
+    }
+
+    .testimonial-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .stars {
+      color: #FFD700;
+    }
+
+    .rating-text {
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+
+    .testimonial-date {
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      opacity: 0.8;
+    }
+
+    .testimonials-nav {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .nav-btn {
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: white;
+      color: var(--color-primary);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      pointer-events: auto;
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--color-accent);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .testimonials-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border: none;
+      border-radius: 50%;
+      background: var(--color-secondary);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .dot.active {
+      background: var(--color-accent);
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 1024px) {
+      .testimonials-track {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .testimonials-stats {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .testimonials-track {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-nav {
+        display: none;
+      }
+    }
+
+    .additional-services {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .additional-services::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .service-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--color-secondary);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .featured .service-badge {
+      background: var(--color-accent);
+      color: white;
+    }
+
+    .service-card:hover .icon-wrapper i {
+      transform: scale(1.1);
+    }
+
+
+
+    .service-images {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-images img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .service-images i {
+      color: var(--color-accent);
+    }
+
+    @media (max-width: 768px) {
+      .additional-services {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .flexible-section {
+      padding: 5rem 0;
+      background-color: #f8f9fa;
+    }
+
+    .flexible-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .flexible-card {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .flexible-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-container {
+      width: 80px;
+      height: 80px;
+      background: var(--color-secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .flexible-card:hover .icon-container {
+      transform: scale(1.1);
+      background: var(--color-primary);
+    }
+
+    .icon-container i {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .flexible-card h3 {
+      color: var(--color-primary);
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .flexible-card p {
+      color: var(--color-text);
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    /* Estilos para el manejo del slider en mobile */
+    .mobile-slider {
+      display: none;
+      width: 100%;
+      height: 520px;
+      padding: 20px 0 40px;
+    }
+
+    .swiper-slide {
+      width: 85%;
+      height: auto;
+    }
+
+    /* Personalizando la paginación */
+    .swiper-pagination {
+      bottom: 0 !important;
+    }
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background: var(--color-primary);
+      opacity: 0.3;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: var(--color-accent);
+    }
+
+    /* Media queries */
+    @media (min-width: 769px) {
+      .desktop-grid {
+        display: grid;
+      }
+
+      .mobile-slider {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .desktop-grid {
+        display: none;
+      }
+
+      .benefits-grid {
+        display: none;
+      }
+
+      .mobile-slider {
+        display: block;
+      }
+
+      .flexible-card {
+        margin: 0;
+      }
+
+      .section-description {
+        margin-bottom: 2rem;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .flexible-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .flexible-card {
+        padding: 1.5rem;
+      }
+    }
+
+    /* Aliado */
+    .aliado-section {
+      padding: 6rem 0;
+      background: var(--color-secondary);
+      overflow: hidden;
+    }
+
+    .aliado-section::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      left: -5%;
+      width: 120%;
+      height: 120%;
+      background: white;
+      transform: rotate(-3deg);
+      z-index: 1;
+    }
+
+    .aliado-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .aliado-text {
+      flex: 1 1 500px;
+    }
+
+    .aliado-text p {
+      font-weight: 400;
+    }
+
+    .aliado-image {
+      flex: 1 1 400px;
+    }
+
+    .aliado-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .aliado-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-block: 2rem;
+    }
+
+    .aliado-feature {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .aliado-feature-icon {
+      font-size: 1.5rem;
+      color: var(--color-accent);
+    }
+
+    .aliado-cta {
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .aliado-section {
+        padding: 4rem 0;
+      }
+
+      .aliado-section::before {
+        display: none;
+      }
+
+      .aliado-content {
+        flex-direction: column;
+      }
+
+      .aliado-image {
+        order: -1;
+        flex: none;
+      }
+    }
+
+    .contacto-section {
+      padding: 6rem 0;
+      background: var(--color-secondary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contacto-section::after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      right: -5%;
+      width: 120%;
+      height: 120%;
+      background: white;
+      transform: rotate(3deg);
+      z-index: 1;
+    }
+
+    .contacto-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+
+    .contacto-form {
+      flex: 1 1 500px;
+    }
+
+    .contacto-info {
+      flex: 1 1 300px;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.375rem;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-accent);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contacto-info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .contacto-info-icon {
+      font-size: 1.5rem;
+      color: var(--color-accent);
+      margin-right: 1rem;
+    }
+
+    .contacto-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .contacto-social a {
+      color: var(--color-primary);
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .contacto-social a:hover {
+      color: var(--color-accent);
+    }
+
+    .contacto-map {
+      margin-top: 2rem;
+      border-radius: 0.375rem;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .contacto-section {
+        padding: 4rem 0;
+      }
+
+      .contacto-section::after {
+        display: none;
+      }
+    }
+
+    .faq-section {
+      padding: 5rem 0;
+      background-color: #f8f9fa;
+    }
+
+    .faq-title {
+      text-align: center;
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      font-weight: 700;
+    }
+
+    .faq-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-question {
+      padding: 1.5rem;
+      margin: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.1rem;
+      color: var(--color-primary);
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: var(--color-accent);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 0 1.5rem 1.5rem;
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-answer p {
+      margin: 0;
+      line-height: 1.6;
+      font-weight: 400;
+      color: var(--color-text);
+    }
+
+    @media (max-width: 768px) {
+      .faq-section {
+        padding: 3rem 1rem;
+      }
+
+      .faq-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .faq-question {
+        padding: 1.25rem;
+        font-size: 1rem;
+      }
+    }
+
+    .contact-section {
+      padding: 5rem 0;
+      background-color: #f8f9fa;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      padding-right: 2rem;
+    }
+
+    .contact-title {
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .contact-description {
+      color: var(--color-text);
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+    }
+
+    .contact-details {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-details h3 {
+      color: var(--color-primary);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:hover {
+      transform: translateX(5px);
+      background: #f0f2f5;
+    }
+
+    .contact-item i {
+      font-size: 1.25rem;
+      color: var(--color-accent);
+      margin-right: 1rem;
+      width: 24px;
+      text-align: center;
+    }
+
+    .contact-link {
+      color: var(--color-text);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-link:hover {
+      color: var(--color-accent);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-secondary);
+      color: white;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background: var(--color-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .contact-info {
+        padding-right: 0;
+      }
+
+      .map-container {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        padding: 3rem 1rem;
+      }
+
+      .contact-title {
+        font-size: 2rem;
+      }
+
+      .contact-description {
+        font-size: 1rem;
+      }
+
+      .map-container {
+        height: 300px;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .hero-content,
+      .app-content,
+      .oportunidades-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero::after,
+      .oportunidades-section::before {
+        display: none;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .section {
+        padding: 4rem 0;
+      }
+    }
+
+    /* Animaciones AOS (Animate On Scroll) */
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero" id="inicio">
+    <div class="hero-background"></div>
+    <div class="container-landing hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="hero-title">
+            <span class="hero-title-highlight">Empleadas</span>
+            Bogotá
+          </h2>
+          <div class="hero-description">
+            <p>La vida en Bogotá es vibrante y ajetreada. Muchos enfrentan el desafío de equilibrar el trabajo, la
+              familia y las tareas del hogar. Si alguna vez has sentido que no tienes tiempo para ti mismo o para
+              disfrutar con tus seres queridos, <strong>¡no estás solo!</strong> Aquí es donde entran nuestras
+              <strong>empleadas
+                domésticas en Bogotá</strong>, dispuestas a transformar tu hogar en un lugar más limpio y acogedor,
+              mientras tú aprovechas al
+              máximo cada momento
+            </p>
+            <p>Transforma tu casa, apartamento y oficina con el respaldo de toc toc aseo, confía en un <strong>servicio
+                de aseo y
+                limpieza profesional</strong> que se adapte a tus necesidades.</p>
+            <p>
+              Con nuestro <strong>personal altamente capacitado</strong> y atención personalizada, aseguramos espacios
+              impecables y
+              libres de preocupaciones. Agenda tu servicio ahora y disfruta de un espacio renovado. ¡Haz clic y vive la
+              diferencia!
+            </p>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">35+</span>
+              <span class="stat-label">Años de experiencia</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10.000+</span>
+              <span class="stat-label">Clientes satisfechos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Garantía de servicio</span>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="#contacto" class="btn btn-primary">
+              <span>Agenda tu servicio ahora</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#testimonios" class="btn btn-secondary">
+              <i class="fas fa-star"></i>
+              <span>Ver testimonios</span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="http://toctocaseo.com/wp-content/uploads/2022/03/senora-quienes-somos.webp"
+            alt="Profesional de limpieza en acción" class="main-image">
+          <div class="trust-badge">
+            <div class="badge-content">
+              <i class="fas fa-shield-alt"></i>
+              <span>Servicio 100% Garantizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav class="nav-tabs">
+    <div class="nav-tabs-container">
+      <button class="nav-arrow nav-arrow-left" aria-label="Desplazar a la izquierda">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="nav-tabs-scroll">
+        <div class="nav-tabs-wrapper">
+          <a href="#servicios" class="nav-tab">
+            <i class="fas fa-broom"></i>
+            <span>Servicios</span>
+          </a>
+          <a href="#capacitacion" class="nav-tab">
+            <i class="fas fa-graduation-cap"></i>
+            <span>Capacitación</span>
+          </a>
+          <a href="#testimonios" class="nav-tab">
+            <i class="fas fa-star"></i>
+            <span>Testimonios</span>
+          </a>
+          <a href="#servicios-adicionales" class="nav-tab">
+            <i class="fas fa-plus-circle"></i>
+            <span>Servicios adicionales</span>
+          </a>
+          <a href="#flexibilidad" class="nav-tab">
+            <i class="fas fa-clock"></i>
+            <span>Flexibilidad</span>
+          </a>
+          <a href="#aliado" class="nav-tab">
+            <i class="fas fa-handshake"></i>
+            <span>Tu aliado</span>
+          </a>
+          <a href="#cobertura" class="nav-tab">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Cobertura</span>
+          </a>
+          <a href="#contacto" class="nav-tab">
+            <i class="fas fa-phone"></i>
+            <span>Contacto</span>
+          </a>
+        </div>
+      </div>
+      <button class="nav-arrow nav-arrow-right" aria-label="Desplazar a la derecha">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+
+  <section class="section why-choose" id="por-que-elegirnos">
+    <div class="container-landing">
+      <div class="section-header">
+        <h2 class="section-title">¿Por qué elegir una empleada doméstica de toc toc?</h2>
+        <p class="section-subtitle">Descubre las ventajas que nos hacen tu mejor opción</p>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Personal capacitado</h3>
+          <p class="benefit-description">Nuestro equipo pasa por rigurosas <strong>capacitaciones y evaluaciones
+              constantes</strong> para
+            brindarte un servicio profesional y de calidad. Una limpieza profesional con un toque humano</p>
+          <p>En toc toc, garantizamos personal calificado y servicios que superan expectativas.</p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Aseo y limpieza garantizado en tu hogar</h3>
+          <p class="benefit-description">Entendemos tus gustos y preferencias. Nos aseguramos de <strong>cumplir con los
+              más
+              altos estándares</strong> para que quedes 100% satisfecho con nuestros resultados.</p>
+          <p>Nuestras empleadas domésticas en Bogotá trabajan con dedicación y profesionalismo para cuidar cada detalle
+            de tu espacio.</p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Tranquilidad legal y laboral</h3>
+          <p class="benefit-description">Todas nuestras profesionales están contratadas con <strong>todas las
+              prestaciones de ley al día</strong>. Olvídate de las preocupaciones legales y disfruta de un equipo seguro
+            y responsable.
+          </p>
+          <p>
+            Disponemos de personal capacitado para garantizar la tranquilidad de tu casas o apartamento.
+          </p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Estamos contigo en momentos importantes</h3>
+          <p class="benefit-description">Desde <strong>imprevistas hasta emergencias específicas, apoyo en situaciones
+              especiales</strong>
+            como mudanzas o
+            después de una fiesta, toc toc aseo está siempre listo para ayudarte.</p>
+          <p>Ofrecemos servicios generales que se adaptan a tus demandas específicas.</p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-user-check"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Selección confiable de nuestro equipo</h3>
+          <p class="benefit-description">Tu seguridad es prioridad. Elegimos a nuestras profesionales con estrictos
+            filtros de selección y verificación de antecedentes para garantizar confianza y excelencia en cada tarea.
+          </p>
+          <p>Confía en toc toc para apoyarte de un equipo confiable y profesional.</p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Respaldo de Elite Soluciones</h3>
+          <p class="benefit-description">toc toc aseo tiene el respaldo de <strong>Élite Soluciones</strong>, con
+            más de 35 años de
+            experiencia en el sector. Sabemos cómo brindar apoyo confiable y de calidad a nuestros clientes,
+            garantizando siempre su tranquilidad.</p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider para Mobile -->
+      <div class="swiper mobile-slider">
+        <div class="swiper-wrapper">
+          <!-- Las mismas cards pero dentro de swiper-slide -->
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Personal capacitado</h3>
+              <p class="benefit-description">Nuestro equipo pasa por rigurosas <strong>capacitaciones y evaluaciones
+                  constantes</strong> para
+                brindarte un servicio profesional y de calidad. Una limpieza profesional con un toque humano</p>
+              <p>En toc toc, garantizamos personal calificado y servicios que superan expectativas.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-award"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Aseo y limpieza garantizado en tu hogar</h3>
+              <p class="benefit-description">Entendemos tus gustos y preferencias. Nos aseguramos de <strong>cumplir con
+                  los
+                  más
+                  altos estándares</strong> para que quedes 100% satisfecho con nuestros resultados.</p>
+              <p>Nuestras empleadas domésticas en Bogotá trabajan con dedicación y profesionalismo para cuidar cada
+                detalle
+                de tu espacio.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Tranquilidad legal y laboral</h3>
+              <p class="benefit-description">Todas nuestras profesionales están contratadas con <strong>todas las
+                  prestaciones de ley al día</strong>. Olvídate de las preocupaciones legales y disfruta de un equipo
+                seguro
+                y responsable.
+              </p>
+              <p>
+                Disponemos de personal capacitado para garantizar la tranquilidad de tu casas o apartamento.
+              </p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Estamos contigo en momentos importantes</h3>
+              <p class="benefit-description">Desde <strong>imprevistas hasta emergencias específicas, apoyo en
+                  situaciones
+                  especiales</strong>
+                como mudanzas o
+                después de una fiesta, toc toc aseo está siempre listo para ayudarte.</p>
+              <p>Ofrecemos servicios generales que se adaptan a tus demandas específicas.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-user-check"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Selección confiable de nuestro equipo</h3>
+              <p class="benefit-description">Tu seguridad es prioridad. Elegimos a nuestras profesionales con estrictos
+                filtros de selección y verificación de antecedentes para garantizar confianza y excelencia en cada
+                tarea.
+              </p>
+              <p>Confía en toc toc para apoyarte de un equipo confiable y profesional.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">Respaldo de Elite Soluciones</h3>
+              <p class="benefit-description">toc toc aseo tiene el respaldo de <strong>Élite Soluciones</strong>,
+                con
+                más de 35 años de
+                experiencia en el sector. Sabemos cómo brindar apoyo confiable y de calidad a nuestros clientes,
+                garantizando siempre su tranquilidad.</p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- ... Repetir para cada card ... -->
+        </div>
+        <!-- Navegación del slider -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="impact-section" id="impacto-social">
+    <div class="container-landing">
+      <div class="impact-content">
+        <div class="impact-text" data-aos="fade-right">
+          <div class="impact-header">
+            <div class="impact-badge">
+              <i class="fas fa-heart"></i>
+              <span>Impacto Social</span>
+            </div>
+            <h2 class="impact-title">
+              Más que limpieza, oportunidades:
+              <span class="highlight">apoyamos a madres cabeza de familia</span>
+            </h2>
+          </div>
+
+          <div class="impact-stats">
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter">500</span>+</div>
+              <div class="stat-label">Madres empleadas</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter">1500</span>+</div>
+              <div class="stat-label">Vidas impactadas</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number"><span class="counter">100</span>%</div>
+              <div class="stat-label">Empleo formal</div>
+            </div>
+          </div>
+
+          <p class="impact-description">
+            Cada servicio que contratas en <strong>toc toc aseo</strong> apoya a <strong>madres cabeza de
+              familia,</strong>
+            brindándoles empleo formal y estabilidad. Creemos en el trabajo digno y en
+            oportunidades que transforman vidas.
+          </p>
+
+          <div class="impact-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Contratos formales con todas las prestaciones</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Capacitación y desarrollo profesional</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Bonos canasta por cumplimiento</span>
+            </div>
+          </div>
+
+          <blockquote class="impact-testimonial">
+            <p>"Gracias a toc toc aseo, no solo tengo un trabajo estable, sino también la
+              oportunidad de dar un mejor futuro a mis hijos."</p>
+            <cite>- María González, colaboradora desde 2020</cite>
+          </blockquote>
+
+          <p class="impact-cta-text">
+            Haz que tu tiempo libre sea realmente tuyo, nosotros nos encargamos del resto.
+          </p>
+
+          <div class="impact-actions">
+            <a href="#contacto" class="btn-primary">
+              <span>¡Contáctanos!</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#testimonios" class="btn-secondary">
+              <i class="fas fa-star"></i>
+              <span>Ver testimonios</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="impact-visual" data-aos="fade-left">
+          <div class="impact-image-wrapper">
+            <img src="http://toctocaseo.com/wp-content/uploads/2022/04/image.png" alt="Impacto social en la comunidad"
+              class="impact-image">
+            <div class="impact-badge-floating">
+              <div class="badge-content">
+                <i class="fas fa-heart"></i>
+                <span>Cambiando vidas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services-section" id="servicios">
+    <div class="container-landing">
+      <div class="services-header">
+        <h2 class="section-title">Nuestros Servicios en Bogotá 2025</h2>
+        <p class="section-description">Conoce nuestros servicios especializados. En toc toc aseo ofrecemos
+          soluciones personalizadas que se ajustan a tus requerimientos.</p>
+        <p class="section-subtitle">Desde lavado y planchado, <strong>servicios rápidos hasta limpiezas
+            profundas</strong>, nuestras
+          profesionales capacitadas están listas para convertir tu casa o apartamento en un espacio impecable. Descubre
+          cuál de
+          nuestras opciones es perfecta para ti.</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <span class="service-tag">Popular</span>
+          </div>
+          <h3 class="service-title">Servicio de aseo 4 horas</h3>
+          <p class="service-description">¡Optimiza tu tiempo con una colaboradora de confianza!</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Limpieza general y desinfección</li>
+            <li><i class="fas fa-check"></i> Lavado y planchado</li>
+            <li><i class="fas fa-check"></i> Organización</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">Desde</span>
+            <span class="price-amount">$102.600</span>
+            <span class="price-period">/servicio</span>
+          </div>
+          <a href="#contacto" class="service-cta">
+            <span>Agendar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <span class="service-tag">Recomendado</span>
+          </div>
+          <h3 class="service-title">Servicio de aseo 8 horas</h3>
+          <p class="service-description">Experimenta la tranquilidad de un entorno limpio con una auxiliar doméstica
+            experta.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Limpieza profunda</li>
+            <li><i class="fas fa-check"></i> Lavado y planchado</li>
+            <li><i class="fas fa-check"></i> Organización completa</li>
+            <li><i class="fas fa-check"></i> Atención personalizada</li>
+          </ul>
+          <div class="service-price">
+            <span class="price-label">Desde</span>
+            <span class="price-amount">$141.100</span>
+            <span class="price-period">/servicio</span>
+          </div>
+          <a href="#contacto" class="service-cta">
+            <span>Agendar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <span class="service-tag">Especializado</span>
+          </div>
+          <h3 class="service-title">Brigadas de aseo toc toc</h3>
+          <p class="service-description">¿Necesitas una transformación completa? Nuestro equipo de profesionales está
+            listo.
+          </p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Equipo especializado</li>
+            <li><i class="fas fa-check"></i> Limpieza profunda</li>
+            <li><i class="fas fa-check"></i> Servicios a medida</li>
+          </ul>
+          <div class="service-price custom">
+            <span class="price-contact">Precio personalizado</span>
+          </div>
+          <a href="#contacto" class="service-cta">
+            <span>Consultar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-shield-virus"></i>
+            </div>
+            <span class="service-tag">Sanitización</span>
+          </div>
+          <h3 class="service-title">Servicio de Aseo SANITEX (Desinfección por COVID)</h3>
+          <p class="service-description">Protege tus espacios con nuestra desinfección especializada.</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Máquina termo nebulizadora</li>
+            <li><i class="fas fa-check"></i> Químicos especializados</li>
+          </ul>
+          <div class="service-price custom">
+            <span class="price-contact">Cotización personalizada</span>
+          </div>
+          <a href="#contacto" class="service-cta">
+            <span>Consultar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fa-solid fa-filter"></i>
+            </div>
+            <span class="service-tag">Servicios puntuales</span>
+          </div>
+          <h3 class="service-title">Más que limpieza, soluciones a la medida.</h3>
+          <p class="service-description">Nuestro personal puede ayudarte con tareas como:</p>
+          <ul class="service-features">
+            <li><i class="fas fa-check"></i> Limpiar cocina</li>
+            <li><i class="fas fa-check"></i> Limpiar nevera</li>
+            <li><i class="fas fa-check"></i> Cocinar</li>
+            <li><i class="fas fa-check"></i> Planchar</li>
+            <li><i class="fas fa-check"></i> Lavar ropa</li>
+            <li><i class="fas fa-check"></i> Arreglar closet</li>
+            <li><i class="fas fa-check"></i> Eventualidades y eventos especiales</li>
+            <li><i class="fas fa-check"></i> Aseo post-obra</li>
+            <li><i class="fas fa-check"></i> Organización de mudanzas</li>
+          </ul>
+          <div class="service-price custom">
+            <span class="price-contact">Cotización personalizada</span>
+          </div>
+          <a href="#contacto" class="service-cta">
+            <span>Consultar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+      <div class="services-header" data-aos="fade-up" data-aos-delay="400">
+        <h2 class="section-title">Respaldo de una empresa con experiencia</h2>
+        <p class="section-description">Más de 35 años brindando confianza en aseo</p>
+        <p class="section-subtitle">toc toc aseo cuenta con el respaldo de <strong>Élite Soluciones</strong>, con más de
+          35 años de experiencia en el sector. Sabemos cómo brindar un servicio confiable y de calidad a nuestros
+          clientes, garantizando siempre su tranquilidad.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="training-section" id="capacitacion">
+    <div class="container-landing">
+      <div class="training-header">
+        <h2 class="section-title">Capacitación y profesionalismo de nuestras empleadas de servicio</h2>
+        <p class="section-description">Formamos profesionales comprometidas con la excelencia en el servicio doméstico
+        </p>
+      </div>
+
+      <div class="training-stats">
+        <div class="stat-item" data-aos="fade-up">
+          <div class="stat-number">
+            <span class="counter">1000</span>+
+          </div>
+          <div class="stat-label">Profesionales capacitadas</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="stat-number">
+            <span class="counter">30.000</span>+
+          </div>
+          <div class="stat-label">Horas de entrenamiento</div>
+        </div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-number">
+            <span class="counter">95</span>%
+          </div>
+          <div class="stat-label">Satisfacción del cliente</div>
+        </div>
+      </div>
+
+      <div class="training-grid">
+        <div class="training-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="card-title">Capacitación continua para un servicio excepcional</h3>
+          <p class="card-description">En toc toc, entendemos que un empleo doméstico de calidad comienza con una
+            capacitación rigurosa. Nuestras profesionales participan en entrenamientos constantes para dominar las
+            mejores técnicas de limpieza y atención al cliente, <strong>asegurando así un rendimiento óptimo</strong>.
+          </p>
+          <div class="training-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Técnicas avanzadas de limpieza</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Atención al cliente</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Seguridad y protocolos</span>
+            </div>
+          </div>
+          <div class="progress-indicator">
+            <div class="progress-bar" style="width: 100%"></div>
+            <span>Programa completado</span>
+          </div>
+        </div>
+
+        <div class="training-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="card-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-clipboard-check"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="card-title">Evaluaciones estrictas para asegurar la calidad</h3>
+          <p class="card-description">La calidad de nuestra labor es una prioridad. Por eso, realizamos evaluaciones
+            periódicas a nuestras colaboradoras para garantizar que <strong>siempre cumplan con nuestros altos
+              estándares</strong>. Con toc toc, tu hogar está en las mejores manos, siempre.</p>
+          <div class="training-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Evaluaciones mensuales</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Retroalimentación continua</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Mejora constante</span>
+            </div>
+          </div>
+          <div class="certification-badge">
+            <i class="fas fa-award"></i>
+            <span>Certificación de Calidad</span>
+          </div>
+        </div>
+
+        <div class="training-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="card-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-comments"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="card-title">Comunicación constante y asesoría personalizada</h3>
+          <p class="card-description">Contar con un enlace directo es fundamental. Ofrecemos comunicación constante para
+            que estés informado sobre el progreso de la limpieza y para abordar cualquier inquietud que puedas tener. En
+            toc toc, tu satisfacción es nuestra misión.</p>
+          <div class="training-features">
+            <div class="feature">
+              <i class="fas fa-check-circle"></i>
+              <span>Seguimiento personalizado</span>
+            </div>
+          </div>
+          <div class="contact-button">
+            <a href="#contacto" class="btn-contact">
+              <i class="fas fa-headset"></i>
+              <span>Contactar ahora</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials-section" id="testimonios">
+    <div class="container-landing">
+      <div class="testimonials-header" data-aos="fade-up">
+        <h2 class="section-title">Testimonios de clientes satisfechos</h2>
+        <p class="section-description">La opinión de nuestros clientes es clave. Muchos han encontrado en toc toc la
+          solución ideal para sus necesidades de limpieza. Sus testimonios son la mejor prueba de que nuestras
+          profesionales realmente hacen la diferencia en su día a día.</p>
+        <div class="testimonials-stats">
+          <div class="stat-item">
+            <div class="stat-number">4.9</div>
+            <div class="stat-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="stat-label">Calificación promedio</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5000+</div>
+            <div class="stat-icon">
+              <i class="fas fa-smile"></i>
+            </div>
+            <div class="stat-label">Clientes satisfechos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="María Rodríguez">
+                  <div class="verified-badge">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+                <div class="client-details">
+                  <h3 class="client-name">María Rodríguez</h3>
+                  <div class="client-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bogotá</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-type">Servicio semanal</div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">"Desde que contraté a toc toc, mi vida ha cambiado. Llego a casa y todo está
+                impecable. ¡Es un alivio enorme!"</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-text">5.0</span>
+              </div>
+              <div class="testimonial-date">Marzo 2025</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Gómez">
+                  <div class="verified-badge">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+                <div class="client-details">
+                  <h3 class="client-name">Carlos Gómez</h3>
+                  <div class="client-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Medellín</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-type">Limpieza profunda</div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">"La profesionalidad y atención al detalle de las empleadas de toc toc es
+                impresionante. Recomiendo sus servicios al 100%."</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="rating-text">4.5</span>
+              </div>
+              <div class="testimonial-date">Febrero 2025</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://randomuser.me/api/portraits/women/89.jpg" alt="Ana Martínez">
+                  <div class="verified-badge">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+                <div class="client-details">
+                  <h3 class="client-name">Ana Martínez</h3>
+                  <div class="client-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Cali</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-type">Servicio quincenal</div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">"La flexibilidad y calidad del servicio de toc toc es inigualable. Me han
+                ayudado enormemente a mantener mi hogar en orden."</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-text">5.0</span>
+              </div>
+              <div class="testimonial-date">Enero 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-nav">
+          <button class="nav-btn prev" aria-label="Anterior testimonio">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="nav-btn next" aria-label="Siguiente testimonio">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="testimonials-dots">
+        <button class="dot active" aria-label="Página 1"></button>
+        <button class="dot" aria-label="Página 2"></button>
+        <button class="dot" aria-label="Página 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="additional-services" id="servicios-adicionales">
+    <div class="container-landing">
+      <div class="services-header" data-aos="fade-up">
+        <h2 class="section-title">Servicios adicionales que ofrece toc toc</h2>
+        <p class="section-description">Descubre nuestra gama completa de servicios especializados para mantener tu
+          espacio en perfectas condiciones</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-exclamation-triangle"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="service-title">Atención a eventualidades y Urgencias</h3>
+          <p class="service-description">En caso de urgencias o situaciones especiales, como inundaciones, mudanzas,
+            limpieza antes o después de un evento, toc toc tiene opciones puntuales para <strong>atender tus necesidades
+              de forma rápida y eficiente.</strong> No dejes que el desorden interrumpa tu día, estamos aquí para
+            ayudarte.
+          </p>
+          <ul class="service-features">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Equipo especializado</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Servicio de emergencia</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="service-cta">
+            <span>Solicitar servicio</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-badge">
+            <span>Servicio Premium</span>
+          </div>
+          <div class="service-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-hard-hat"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="service-title">Limpieza Post Obra</h3>
+          <p class="service-description">Deja la limpieza pesada en manos expertas. Nuestro equipo post obra elimina
+            restos de polvo, pintura, y residuos de construcción, dejando tus <strong>espacios listos para
+              habitar.</strong> Usamos productos y técnicas especializadas que garantizan resultados impecables sin
+            dañar tus superficies. Contrata ahora y disfruta de espacios limpios desde el primer día.
+          </p>
+          <ul class="service-features">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Productos especializados</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Personal capacitado</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Garantía de servicio</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="service-cta">
+            <span>Contratar ahora</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-badge">
+            <span>Más solicitado</span>
+          </div>
+          <div class="service-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-couch"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="service-title">Lavado de muebles, colchones y tapetes</h3>
+          <p class="service-description">Nuestro servicio de lavado de muebles y colchones elimina <strong>manchas,
+              suciedad,
+              ácaros y malos olores,</strong> garantizando un ambiente fresco y saludable en tu hogar. Usamos técnicas
+            avanzadas y
+            productos de alta calidad para preservar los materiales y devolverles su apariencia original. Agenda hoy
+            mismo y transforma tus espacios con resultados impecables.
+          </p>
+          <ul class="service-features">
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Técnicas avanzadas</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Productos de alta calidad</span>
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i>
+              <span>Resultados garantizados</span>
+            </li>
+          </ul>
+          <a href="#contacto" class="service-cta">
+            <span>Agendar servicio</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contacto">
+    <div class="container-landing">
+      <div class="contact-grid">
+        <!-- Información de contacto -->
+        <div class="contact-info">
+          <h2 class="contact-title">Contáctanos y contrata hoy</h2>
+          <p class="contact-description">
+            No esperes más, agenda tu servicio y mejora así tu calidad de vida. Disfruta de espacios limpios y ordenados
+            con el <strong>respaldo y profesionalismo</strong> de toc toc aseo.
+          </p>
+
+          <div class="contact-details">
+            <h3>Línea WhatsApp</h3>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.link/40el40" class="contact-link">+57 312 345 6789</a>
+            </div>
+
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="flexible-section">
+    <div class="container-landing">
+      <h2 class="section-title">Cubrimos cada necesidad en tu hogar</h2>
+      <p class="section-description">
+        En toc toc aseo entendemos que cada hogar es único, por eso <strong>ofrecemos soluciones flexibles</strong> que
+        se adaptan a tus
+        horarios y requerimientos. Ya sea que necesites ayuda puntual, regular o constante, contamos con una amplia
+        variedad de opciones para garantizar que encuentres la opción perfecta para tu entorno. ¡Descubre la comodidad
+        de un apoyo personalizado que siempre está a tu alcance!
+      </p>
+
+      <div class="flexible-grid desktop-grid">
+        <!-- Card 1 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-calendar-day"></i>
+          </div>
+          <h3>Empleada doméstica por días en Bogotá</h3>
+          <p>Cuando necesitas apoyo en tareas específicas o momentos puntuales, una <strong>colaboradora por días es
+              ideal.</strong>
+            Nuestro equipo profesional está listo para ayudarte cuando lo necesites.</p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Reserva hoy</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-calendar-week"></i>
+          </div>
+          <h3>Lunes a viernes y sábados</h3>
+          <p>Disfruta de la tranquilidad de confiar en una colaboradora de lunes a viernes que se encargue de las tareas
+            diarias. Nuestras profesionales capacitadas aseguran un espacio impecable y ordenado cada día.</p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contrata ahora</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3>Servicios una vez a la semana</h3>
+          <p>Si buscas mantener el orden y la <strong>organización</strong> nuestras colaboradoras pueden
+            asistir una vez a la semana, adaptándose a tus exigencias.</p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Asignar día de limpieza</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-hourglass-half"></i>
+          </div>
+          <h3>Apoyo medio tiempo</h3>
+          <p>Para quienes necesitan ayuda constante pero no todo el día, nuestra opción de medio tiempo <strong>se
+              ajusta a tus horarios y prioridades.</strong></p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Agenda tu apoyo</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-clock"></i>
+          </div>
+          <h3>Atención de tiempo completo</h3>
+          <p>Para viviendas que requieren cuidado constante, ofrecemos apoyo a tiempo completo, cuidando <strong>cada
+              detalle y garantizando tu tranquilidad.</strong></p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contrata hoy mismo</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3>Colaboradora por fines de semana</h3>
+          <p>Aprovecha tus días libres con una colaboradora disponible los fines de semana. Desde <strong>tareas
+              detalladas hasta trabajos específicos,</strong> garantizamos calidad y profesionalismo.
+          </p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Reserva ya</a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Doméstica externa</h3>
+          <p>La opción ideal para quienes prefieren un <strong>apoyo diario o por horas sin permanencia.</strong>
+            Nuestras colaboradoras externas son profesionales que garantizan resultados excelentes.</p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contáctanos hoy</a>
+        </div>
+
+        <!-- Card 8 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-calendar-plus"></i>
+          </div>
+          <h3>Servicio por mes</h3>
+          <p>Para cuidado constante, nuestro plan mensual asegura una <strong>casa o apartamento impecable todo el
+              tiempo.</strong> Nuestras profesionales se adaptan a tus necesidades, ofreciéndote tranquilidad.</p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Agenda tu plan</a>
+        </div>
+      </div>
+
+      <!-- Slider para Mobile -->
+      <div class="swiper mobile-slider">
+        <div class="swiper-wrapper">
+          <!-- Las mismas cards pero dentro de swiper-slide -->
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-day"></i>
+              </div>
+              <h3>Empleada doméstica por días</h3>
+              <p>Cuando necesitas apoyo en tareas específicas o momentos puntuales, una <strong>colaboradora por días es
+                  ideal.</strong>
+                Nuestro equipo profesional está listo para ayudarte cuando lo necesites.</p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Reserva hoy</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-week"></i>
+              </div>
+              <h3>Lunes a viernes y sábados</h3>
+              <p>Disfruta de la tranquilidad de contar con una colaboradora de lunes a viernes que se encargue de las
+                tareas
+                diarias. Nuestras profesionales capacitadas aseguran un espacio impecable y ordenado cada día.</p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contrata ahora</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-check"></i>
+              </div>
+              <h3>Servicios una vez a la semana</h3>
+              <p>Si buscas mantener la <strong>limpieza y el orden con regularidad,</strong> nuestras colaboradoras
+                pueden
+                asistir una vez a la semana, adaptándose a tus necesidades.</p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Asignar día de limpieza</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-hourglass-half"></i>
+              </div>
+              <h3>Apoyo medio tiempo</h3>
+              <p>Para quienes necesitan ayuda constante pero no todo el día, nuestra opción de medio tiempo <strong>se
+                  ajusta a tus horarios y prioridades.</strong></p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Agenda tu apoyo</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-clock"></i>
+              </div>
+              <h3>Atención de tiempo completo</h3>
+              <p>Para viviendas que requieren cuidado constante, ofrecemos apoyo a tiempo completo, cuidando
+                <strong>cada
+                  detalle y garantizando tu tranquilidad.</strong>
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contrata hoy mismo</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3>Colaboradora por fines de semana</h3>
+              <p>Aprovecha tus días libres con una colaboradora disponible los fines de semana. Desde <strong>limpiezas
+                  profundas
+                  hasta tareas específicas,</strong> garantizamos calidad y profesionalismo.
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Reserva ya</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-home"></i>
+              </div>
+              <h3>Doméstica externa</h3>
+              <p>La opción ideal para quienes prefieren un <strong>apoyo diario o por horas sin permanencia.</strong>
+                Nuestras colaboradoras externas son profesionales que garantizan resultados excelentes.</p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contáctanos hoy</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-plus"></i>
+              </div>
+              <h3>Servicio por mes</h3>
+              <p>Para cuidado constante, nuestro plan mensual asegura una <strong>casa o apartamento impecable todo el
+                  tiempo.</strong> Nuestras profesionales se adaptan a tus necesidades, ofreciéndote tranquilidad.</p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Agenda tu plan</a>
+            </div>
+          </div>
+          <!-- ... Repetir para cada card ... -->
+        </div>
+        <!-- Navegación del slider -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section aliado-section" id="aliado">
+    <div class="container-landing aliado-content">
+      <div class="aliado-text">
+        <h2>Contar con un hogar impecable ahora es posible con toc toc aseo</h2>
+        <p>Invertir en un servicio de toc toc aseo es una decisión inteligente que transforma tu vida. <strong>Te
+            liberamos de
+            las labores del hogar,</strong> garantizando un servicio de limpieza que se adapta a tus necesidades. Con
+          más de 35
+          años de experiencia y un equipo de profesionales altamente capacitados, aseguramos que cada rincón de tu casa
+          refleje pulcritud y cuidado.</p>
+        <div class="aliado-features">
+          <div class="aliado-feature">
+            <div class="aliado-feature-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <span>Ahorra tiempo</span>
+          </div>
+          <div class="aliado-feature">
+            <div class="aliado-feature-icon">
+              <i class="fas fa-user-check"></i>
+            </div>
+            <span>Personal confiable</span>
+          </div>
+          <div class="aliado-feature">
+            <div class="aliado-feature-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <span>Calidad garantizada</span>
+          </div>
+          <div class="aliado-feature">
+            <div class="aliado-feature-icon">
+              <i class="fas fa-comments"></i>
+            </div>
+            <span>Comunicación constante</span>
+          </div>
+        </div>
+        <p>No solo ahorras tiempo, sino que también disfrutas de la tranquilidad de saber que tu espacio está en las
+          mejores manos. Además, nuestro enfoque en la <strong>personalización del servicio, la calidad
+            garantizada</strong> y la
+          comunicación constante te brindan una experiencia única y satisfactoria.</p>
+        <p><strong>Con toc toc aseo,</strong> puedes confiar en que tus espacios estarán siempre limpios y ordenados. No
+          dejes pasar más
+          tiempo, ¡agenda tu servicio hoy mismo y experimenta la diferencia de contar con una colaboradora confiable y
+          profesional!</p>
+
+        <ul class="service-features">
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span>Usaquén</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span>Chapinero</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span>Teusaquillo</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span>Colina Campestre</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span>San Patricio</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span>Cedritos</span>
+          </li>
+        </ul>
+
+        <div class="aliado-cta">
+          <a href="#contacto" class="btn btn-primary">Agenda tu servicio ahora</a>
+        </div>
+      </div>
+      <div class="aliado-image">
+        <img
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+          alt="Profesional de limpieza sonriente">
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="preguntas-frecuentes">
+    <div class="container-landing">
+      <h2 class="faq-title">Preguntas Frecuentes</h2>
+      <div class="faq-grid">
+        <!-- Los items del FAQ se generarán dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth <= 768) {
+        return new Swiper('.mobile-slider', {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          centeredSlides: true,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          },
+          effect: 'coverflow',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          },
+        });
+      }
+    });
+
+    // Manejar cambios de tamaño de ventana
+    window.addEventListener('resize', function () {
+      if (window.innerWidth <= 768) {
+        if (!document.querySelector('.swiper').swiper) {
+          return new Swiper('.mobile-slider', {
+            // ... mismas opciones que arriba
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            },
+            effect: 'coverflow',
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            },
+          });
+        }
+      }
+    });
+  </script>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const wrapper = document.querySelector('.nav-tabs-wrapper');
+      const leftArrow = document.querySelector('.nav-arrow-left');
+      const rightArrow = document.querySelector('.nav-arrow-right');
+      const scrollContainer = document.querySelector('.nav-tabs-scroll');
+      let scrollPosition = 0;
+      const scrollStep = 200;
+
+      // Función para actualizar la visibilidad de las flechas
+      function updateArrowsVisibility() {
+        leftArrow.style.opacity = scrollPosition <= 0 ? '0.5' : '1';
+        leftArrow.style.pointerEvents = scrollPosition <= 0 ? 'none' : 'auto';
+
+        const maxScroll = wrapper.scrollWidth - scrollContainer.clientWidth;
+        rightArrow.style.opacity = scrollPosition >= maxScroll ? '0.5' : '1';
+        rightArrow.style.pointerEvents = scrollPosition >= maxScroll ? 'none' : 'auto';
+      }
+
+      // Inicializar la visibilidad de las flechas
+      updateArrowsVisibility();
+
+      // Manejar el clic en la flecha izquierda
+      leftArrow.addEventListener('click', () => {
+        scrollPosition = Math.max(0, scrollPosition - scrollStep);
+        wrapper.style.transform = `translateX(-${scrollPosition}px)`;
+        updateArrowsVisibility();
+      });
+
+      // Manejar el clic en la flecha derecha
+      rightArrow.addEventListener('click', () => {
+        const maxScroll = wrapper.scrollWidth - scrollContainer.clientWidth;
+        scrollPosition = Math.min(maxScroll, scrollPosition + scrollStep);
+        wrapper.style.transform = `translateX(-${scrollPosition}px)`;
+        updateArrowsVisibility();
+      });
+
+      // Actualizar la navegación activa al hacer scroll
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionBottom = sectionTop + section.offsetHeight;
+          const sectionId = section.getAttribute('id');
+          const navLink = document.querySelector(`.nav-tab[href="#${sectionId}"]`);
+
+          if (scrollY >= sectionTop && scrollY < sectionBottom) {
+            navLink?.classList.add('active');
+          } else {
+            navLink?.classList.remove('active');
+          }
+        });
+      });
+
+      // Manejar el redimensionamiento de la ventana
+      window.addEventListener('resize', updateArrowsVisibility);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const faqData = [
+        {
+          question: "¿Qué incluye un toc toc?",
+          answer: "Nuestras alternativas abarcan limpieza profunda en diversas áreas como cocina, baños, habitaciones y más. También puedes solicitar apoyo específico, como planchado o lavado de ropa."
+        },
+        {
+          question: "¿Cómo puedo contratar a una colaboradora?",
+          answer: "Contratar es muy fácil. Escríbenos por WhatsApp y un <strong>asesor coordinará todos los detalles.</strong>"
+        },
+        {
+          question: "¿Tienen disponibilidad para limpieza de emergencia?",
+          answer: "Sí, contamos con alternativas para atender urgencias, como después de una fiesta, una inundación o mudanza. Llama ahora y solucionaremos tu necesidad."
+        },
+        {
+          question: "¿Qué tipo de capacitación reciben nuestros colaboradores?",
+          answer: "Nuestro personal recibe capacitación continua en técnicas de limpieza, atención al cliente y seguridad. Esto les permite brindar un servicio excepcional y garantizar la calidad en cada tarea realizada."
+        },
+        {
+          question: "¿Cómo se asegura la calidad del servicio?",
+          answer: "La calidad es nuestra prioridad. Realizamos evaluaciones periódicas al personal y también tomamos en cuenta la retroalimentación de nuestros clientes para mejorar continuamente nuestros servicios."
+        },
+        {
+          question: "¿Es posible personalizar el servicio de limpieza?",
+          answer: "Absolutamente. En toc toc ofrecemos un servicio adaptado a tus requerimientos. Los horarios, frecuencias y tareas específicas se pueden ajustar según tus necesidades y preferencias."
+        },
+        {
+          question: "¿Qué áreas de Colombia cubren sus servicios?",
+          answer: "Actualmente, toc toc ofrece servicios de empleadas de limpieza en las principales ciudades de Colombia, incluyendo Bogotá, Medellín, Cali y Bucaramanga. Si necesitas más información sobre disponibilidad, no dudes en consultarnos."
+        },
+        {
+          question: "¿Cómo garantiza toc toc el bienestar de sus empleadas domésticas?",
+          answer: "En toc toc, nos preocupamos por el bienestar de todo nuestro personal. Les ofrecemos todas las prestaciones de ley, así como oportunidades de capacitación y desarrollo personal, lo que garantiza un entorno de trabajo digno y seguro."
+        },
+        {
+          question: "¿Cuáles son las obligaciones legales al contratar servicio doméstico?",
+          answer: "Al contratar trabajo doméstico, es obligatorio cumplir con el salario mínimo vigente, realizar los aportes a salud, pensión y riesgos laborales, y garantizar prestaciones como cesantías, primas de servicio, vacaciones, caja de compensación familiar y descanso semanal remunerado. Además, se debe pagar auxilio de transporte si corresponde."
+        },
+        {
+          question: "¿Puedo contratar servicio doméstico de manera parcial?",
+          answer: "Sí, el servicio doméstico puede ser contratado por jornadas parciales según las necesidades de tu casa o apartamento. En estos casos, los aportes a seguridad social y prestaciones se calculan de manera proporcional al tiempo trabajado. Con toc toc no debes preocuparte por nada, lo tenemos todo cubierto para ti."
+        },
+        {
+          question: "¿Cómo garantiza toc toc aseo un servicio doméstico formal y seguro?",
+          answer: "toc toc aseo combate la informalidad ofreciendo contratos legales, salarios justos y beneficios de ley para todas sus colaboradoras. De esta manera, brindamos tranquilidad y confianza tanto a los empleadores como a nuestras profesionales."
+        }
+      ];
+
+      const faqGrid = document.querySelector('.faq-grid');
+
+      // Generar elementos FAQ
+      faqData.forEach(item => {
+        const faqItem = document.createElement('div');
+        faqItem.className = 'faq-item';
+        faqItem.innerHTML = `
+            <h3 class="faq-question">${item.question}</h3>
+            <div class="faq-answer">
+                <p>${item.answer}</p>
+            </div>
+        `;
+        faqGrid.appendChild(faqItem);
+      });
+
+      // Manejar clics en las preguntas
+      document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+          const item = question.parentElement;
+          const isActive = item.classList.contains('active');
+
+          // Cerrar todos los items activos
+          document.querySelectorAll('.faq-item').forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+            }
+          });
+
+          // Toggle el item actual
+          item.classList.toggle('active');
+
+          // Animación suave al scroll si es necesario
+          if (!isActive) {
+            const itemTop = item.getBoundingClientRect().top + window.pageYOffset;
+            const offset = 100;
+            window.scrollTo({
+              top: itemTop - offset,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
