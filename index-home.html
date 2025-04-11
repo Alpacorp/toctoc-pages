@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empleadas Domésticas Confiables | Servicio de Limpieza 2025 </title>
+  <meta name="description"
+    content="toc toc aseo, Líder en Servicios de Limpieza que dignifican la labor de las profesionales del aseo. Empleadas domésticas Confiables en Colombia.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <style>
+    /* Reset y variables */
+    :root {
+      --color-primary: #13224a;
+      --color-secondary: #E6F4FF;
+      --color-accent: #00B6FF;
+      --font-primary: 'Roboto', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      color: var(--color-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* Layout */
+    .container-landing {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Tipografía */
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--color-primary);
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--color-primary);
+      opacity: 0.9;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 6rem 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #E6F4FF 0%, #ffffff 100%);
+      z-index: 1;
+    }
+
+    .hero-background::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 50%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-text {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 2rem;
+      color: var(--color-primary);
+    }
+
+    .hero-title-highlight {
+      display: block;
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    @media (max-width: 1024px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .hero-description {
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-description p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--color-primary);
+      opacity: 0.9;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: white !important;
+      border: 2px solid var(--color-primary);
+    }
+
+    .coverage-section {
+      padding: 6rem 0;
+      background-color: #f8f9fa;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .coverage-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .coverage-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-description {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      color: var(--color-text);
+      line-height: 1.6;
+      font-size: 1.1rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .coverage-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .city-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .city-card p {
+      font-weight: 400;
+    }
+
+    .city-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .city-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--color-secondary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .city-card:hover .city-icon {
+      background: var(--color-accent);
+    }
+
+    .city-icon i {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      transition: all 0.3s ease;
+    }
+
+    .city-card:hover .city-icon i {
+      color: white;
+    }
+
+    .city-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: #22c55e;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+
+    .city-name {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .city-description {
+      color: var(--color-primary);
+      font-weight: 400;
+      opacity: 0.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .city-features {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .feature i {
+      color: var(--color-accent);
+      font-size: 1rem;
+    }
+
+    .city-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .city-cta:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .city-cta i {
+      transition: transform 0.3s ease;
+    }
+
+    .city-cta:hover i {
+      transform: translateX(5px);
+    }
+
+    @media (max-width: 768px) {
+      .coverage-section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .coverage-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .card-icon {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1.5rem;
+      margin-inline: auto;
+    }
+
+    .icon-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 50%;
+      z-index: 3;
+      margin-inline: auto;
+    }
+
+    .icon-wrapper i {
+      font-size: 2rem;
+      color: var(--color-accent);
+      transition: transform 0.3s ease;
+      z-index: 4;
+    }
+
+    .training-card:hover .icon-wrapper i {
+      transform: scale(1.1);
+    }
+
+    .icon-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: var(--color-secondary);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .card-description {
+      color: var(--color-primary);
+      font-weight: 400;
+      opacity: 0.8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    .btn-contact:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+
+    /* Animaciones para los números */
+    @keyframes countUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (max-width: 768px) {
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Media queries */
+    @media (min-width: 769px) {
+      .desktop-grid {
+        display: grid;
+      }
+
+      .mobile-slider {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .desktop-grid {
+        display: none;
+      }
+
+      .benefits-grid {
+        display: none;
+      }
+
+      .mobile-slider {
+        display: block;
+      }
+
+      .flexible-card {
+        margin: 0;
+      }
+
+      .section-description {
+        margin-bottom: 2rem;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .flexible-card {
+        padding: 1.5rem;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .hero-content,
+      .app-content,
+      .oportunidades-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero::after,
+      .oportunidades-section::before {
+        display: none;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .section {
+        padding: 4rem 0;
+      }
+    }
+
+    /* Animaciones AOS (Animate On Scroll) */
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero" id="inicio">
+    <div class="hero-background"></div>
+    <div class="container-landing hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="hero-title">
+            Nuestras empleadas domésticas: <span class="hero-title-highlight">confiables, capacitadas y listas para
+              ayudarte</span>
+          </h2>
+          <div class="hero-description">
+            <p>En toc toc aseo trabajamos con <a href="https://toctocaseo.com/empleadas-domesticas/"
+                target="_blank">empleadas domésticas profesionales</a>, seleccionadas bajo estrictos filtros
+              de seguridad y capacitadas en limpieza, organización y atención al detalle.</p>
+            <p>Tienes la tranquilidad de contar con personal respaldado y con todas sus prestaciones de ley.</p>
+            <p>Conoce más sobre nuestras empleadas domésticas y déjate sorprender por el compromiso y la experiencia del
+              equipo toc toc.</p>
+            </p>
+          </div>
+          <div class="hero-cta">
+            <a href="https://toctocaseo.com/empleadas-domesticas/" target="_blank" class="btn btn-primary">
+              <span>Agenda tu servicio ahora</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="coverage-section" id="cobertura">
+    <div class="container-landing">
+      <div class="coverage-header">
+        <h2 class="section-title">Cobertura en Colombia</h2>
+        <p class="section-description">Brindamos servicios profesionales de limpieza en las principales ciudades del
+          país</p>
+      </div>
+
+      <div class="coverage-content">
+        <div class="coverage-grid">
+          <div class="city-card">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Bogotá</h3>
+            <p class="city-description">Servicio doméstico confiable a tu alcance.</p>
+            <p>En la capital, ofrecemos soluciones de limpieza y cuidado del hogar con <strong>personal altamente
+                capacitado</strong>.
+              Vive la tranquilidad de un equipo profesional y seguro.</p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="https://wa.link/ltzoy5" target="_blank" class="city-cta">
+              <span>Reserva en Bogotá</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Medellín</h3>
+            <p class="city-description">La mejor opción para tu hogar.</p>
+            <p>Disfruta de un apoyo doméstico personalizado en la ciudad de la eterna primavera. Nuestro equipo asegura
+              <strong>espacios impecables</strong> para que tú disfrutes lo que realmente importa.
+            </p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="https://wa.link/5m54su" target="_blank" class="city-cta">
+              <span>Reserva en Medellín</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Cali</h3>
+            <p class="city-description">Limpieza profesional al calor del Valle.</p>
+            <p>Llevamos a Cali un apoyo doméstico que combina <strong>calidad, confianza y atención al detalle.</strong>
+              Deja tu casa o
+              apartamento en manos de expertas.
+            </p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="https://wa.link/1xne89" target="_blank" class="city-cta">
+              <span>Reserva en Cali</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Bucaramanga</h3>
+            <p class="city-description">Soluciones para hogares impecables.</p>
+            <p>En la ciudad bonita, ofrecemos ayuda doméstica que se <strong>adapta a tus necesidades.</strong> Confía
+              en nuestras
+              profesionales para mantener tu casa o apartamento limpio y organizado.</p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="https://wa.link/19qnb4" target="_blank" class="city-cta">
+              <span>Reserva en Bucaramanga</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
