@@ -1,0 +1,3852 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lavado de muebles a Domicilio: Limpieza y Lavado con toc toc aseo</title>
+  <meta name="description"
+    content="Servicio de Lavado de muebles a domicilio. Limpieza y lavado de muebles, tapetes y alfombras. Contrata el mejor lavado de muebles en Colombia.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <style>
+    /* Reset y variables */
+    :root {
+      --color-primary: #13224a;
+      --color-secondary: #E6F4FF;
+      --color-accent: #00B6FF;
+      --font-primary: 'Roboto', sans-serif;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .page-id-3995 .ld-page__title {
+      display: none;
+    }
+
+    body {
+      font-family: var(--font-primary);
+      color: var(--color-primary);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    main .container {
+      margin-inline: 0;
+      padding-inline: 0;
+      width: 100%;
+      max-width: none !important;
+    }
+
+    /* Layout */
+    .container-landing {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    /* Tipografía */
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: var(--color-primary);
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.25rem;
+    }
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: var(--color-primary);
+      opacity: 0.9;
+      margin-bottom: 1rem;
+      font-weight: 300;
+    }
+
+    /* Navegación */
+    .nav-container {
+      background: white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      padding: 1rem 0;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--color-primary);
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-accent);
+    }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      padding: 6rem 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #E6F4FF 0%, #ffffff 100%);
+      z-index: 1;
+    }
+
+    .hero-background::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 50%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .hero-text {
+      animation: fadeInUp 0.8s ease-out;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1;
+      margin-bottom: 2rem;
+      color: var(--color-primary);
+    }
+
+    .hero-title-highlight {
+      display: block;
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    .hero-description {
+      max-width: 600px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-description p {
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: var(--color-primary);
+      opacity: 0.9;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero-cta {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .hero-image {
+      position: relative;
+      animation: fadeInRight 0.8s ease-out;
+    }
+
+    .stat-item {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: center;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      font-weight: 400;
+      color: var(--color-primary);
+      opacity: 0.8;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(19, 34, 74, 0.3);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+    }
+
+    .btn-secondary:hover {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .main-image {
+      width: 100%;
+      height: auto;
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(19, 34, 74, 0.1);
+    }
+
+    .trust-badge {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 30px rgba(19, 34, 74, 0.1);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .badge-content {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .badge-content i {
+      color: var(--color-accent);
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInRight {
+      from {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+
+      .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .hero-image {
+        order: 2;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 4rem 0;
+      }
+
+      .hero-stats {
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .hero-cta {
+        flex-direction: column;
+      }
+
+      .btn {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    /* Secciones con formas */
+    .section {
+      padding: 6rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .section-wave {
+      background: var(--color-secondary);
+    }
+
+    .section-wave::before,
+    .section-wave::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 100px;
+      background: white;
+    }
+
+    .section-wave::before {
+      top: 0;
+      border-radius: 0 0 50% 50%;
+    }
+
+    .section-wave::after {
+      bottom: 0;
+      border-radius: 50% 50% 0 0;
+    }
+
+    /* Quick Nav */
+    .nav-tabs {
+      position: relative;
+      background: white;
+      padding: 1rem 0;
+      margin: 2rem 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-tabs-container {
+      position: relative;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      /* Espacio para los botones de navegación */
+    }
+
+    .nav-tabs-scroll {
+      overflow: hidden;
+      position: relative;
+    }
+
+    .nav-tabs-wrapper {
+      display: flex;
+      gap: 1rem;
+      transition: transform 0.3s ease;
+      padding: 0.5rem 0;
+    }
+
+    .nav-tab {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.25rem;
+      color: var(--color-primary);
+      text-decoration: none;
+      white-space: nowrap;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+      font-weight: 500;
+    }
+
+    .nav-tab:hover {
+      background: var(--color-secondary);
+      transform: translateY(-2px);
+    }
+
+    .nav-tab.active {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .nav-tab i {
+      font-size: 1.2rem;
+    }
+
+    .nav-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: all 0.3s ease;
+    }
+
+    .nav-arrow:hover {
+      background: var(--color-secondary);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+    .nav-arrow-left {
+      left: 0;
+    }
+
+    .nav-arrow-right {
+      right: 0;
+    }
+
+    .nav-arrow i {
+      color: var(--color-primary);
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-tabs-container {
+        padding: 0 35px;
+      }
+
+      .nav-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    .services-grid {
+      margin: 3rem 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .service-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Quick Links */
+    .quick-links {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      padding: 1rem 0;
+      margin: 2rem 0;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .quick-link {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      background: white;
+      border-radius: 50px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      text-decoration: none;
+      color: var(--color-primary);
+      white-space: nowrap;
+      transition: transform 0.3s ease;
+    }
+
+    .quick-link:hover {
+      transform: translateY(-2px);
+    }
+
+    /* Por qué escogernos */
+    .why-choose {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #E6F4FF 0%, #ffffff 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .why-choose::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .benefits-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .benefit-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .benefit-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .benefit-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-primary) 100%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .benefit-card:hover::before {
+      opacity: 1;
+    }
+
+    .benefit-icon {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1.5rem;
+      margin-inline: auto;
+    }
+
+
+    .benefit-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .benefit-description {
+      color: var(--color-primary);
+      opacity: 0.8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+
+    .benefit-footer {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .benefit-check {
+      color: var(--color-accent);
+      font-size: 1.2rem;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: all 0.3s ease;
+    }
+
+    .benefit-card:hover .benefit-check {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .why-choose {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+    }
+
+    /* Botones */
+    .btn {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: white !important;
+      border: 2px solid var(--color-primary);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--color-primary);
+      border: 2px solid var(--color-primary);
+      margin-block-start: 1rem;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .services-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 80%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .services-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-subtitle {
+      color: var(--color-primary);
+      opacity: 0.8;
+      font-weight: 400;
+      font-size: 1.1rem;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .service-card.featured {
+      border: 2px solid var(--color-accent);
+      background: linear-gradient(to bottom, white, #f8fbff);
+    }
+
+    .service-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-icon {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      background: var(--color-secondary);
+      border-radius: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      margin-bottom: 1.5rem;
+      z-index: 2;
+    }
+
+    .service-card:hover .service-icon {
+      transform: scale(1.1);
+      background: var(--color-accent);
+    }
+
+    .service-icon i {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      transition: all 0.3s ease;
+    }
+
+    .service-card:hover .service-icon i {
+      color: var(--color-primary);
+    }
+
+    .service-tag {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      background: var(--color-secondary);
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .service-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .service-description {
+      color: var(--color-primary);
+      font-weight: 400;
+      opacity: 0.8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-features li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .service-features i {
+      color: var(--color-accent);
+      font-size: 1rem;
+    }
+
+    .service-price {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: var(--color-secondary);
+      border-radius: 10px;
+    }
+
+    .price-label {
+      display: block;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      opacity: 0.8;
+      margin-bottom: 0.25rem;
+    }
+
+    .price-amount {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--color-primary);
+    }
+
+    .price-period {
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      opacity: 0.8;
+    }
+
+    .price-contact {
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+
+    .service-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    .service-cta:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .service-cta i {
+      transition: transform 0.3s ease;
+    }
+
+    .service-cta:hover i {
+      transform: translateX(5px);
+    }
+
+    @media (max-width: 768px) {
+      .services-section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .coverage-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .coverage-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .coverage-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-description {
+      text-align: center;
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      color: var(--color-text);
+      line-height: 1.6;
+      font-size: 1.1rem;
+      font-weight: 400;
+      opacity: 0.8;
+    }
+
+    .coverage-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 4rem;
+    }
+
+    .coverage-map {
+      position: relative;
+      height: 400px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+    }
+
+    .map-container {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .map-markers {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .map-marker {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      transform: translate(-50%, -50%);
+    }
+
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .city-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .city-card p {
+      font-weight: 400;
+    }
+
+    .city-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .city-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1.5rem;
+    }
+
+    .city-icon {
+      width: 50px;
+      height: 50px;
+      background: var(--color-secondary);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+    }
+
+    .city-card:hover .city-icon {
+      background: var(--color-accent);
+    }
+
+    .city-icon i {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      transition: all 0.3s ease;
+    }
+
+    .city-card:hover .city-icon i {
+      color: white;
+    }
+
+    .city-status {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: #22c55e;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+
+    .city-name {
+      font-size: 1.5rem;
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .city-description {
+      color: var(--color-primary);
+      font-weight: 400;
+      opacity: 0.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .city-features {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-primary);
+    }
+
+    .feature i {
+      color: var(--color-accent);
+      font-size: 1rem;
+    }
+
+    .city-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+    }
+
+    .city-cta:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    .city-cta i {
+      transition: transform 0.3s ease;
+    }
+
+    .city-cta:hover i {
+      transform: translateX(5px);
+    }
+
+    @media (max-width: 768px) {
+      .coverage-section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .coverage-map {
+        height: 300px;
+      }
+
+      .coverage-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Oportunidades Section */
+    .oportunidades-section {
+      background: var(--color-secondary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .oportunidades-section::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -20%;
+      width: 80%;
+      height: 200%;
+      background: white;
+      border-radius: 50%;
+      transform: rotate(10deg);
+    }
+
+    .oportunidades-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .oportunidades-image img {
+      border-radius: 20px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .training-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .training-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 80%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .training-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .section-title {
+      text-align: center;
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .training-stats {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .training-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .training-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .training-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-icon {
+      position: relative;
+      width: 70px;
+      height: 70px;
+      margin-bottom: 1.5rem;
+      margin-inline: auto;
+    }
+
+    .icon-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: white;
+      border-radius: 50%;
+      z-index: 3;
+      margin-inline: auto;
+    }
+
+    .icon-wrapper i {
+      font-size: 2rem;
+      color: var(--color-accent);
+      transition: transform 0.3s ease;
+      z-index: 4;
+    }
+
+    .training-card:hover .icon-wrapper i {
+      transform: scale(1.1);
+    }
+
+    .icon-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background: var(--color-secondary);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    .card-title {
+      font-size: 1.25rem;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .card-description {
+      color: var(--color-primary);
+      font-weight: 400;
+      opacity: 0.8;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+
+    .training-features {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .progress-indicator {
+      background: var(--color-secondary);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-top: auto;
+    }
+
+    .progress-bar {
+      height: 6px;
+      background: var(--color-accent);
+      border-radius: 3px;
+      margin-bottom: 0.5rem;
+    }
+
+    .certification-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--color-secondary);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: auto;
+      color: var(--color-primary);
+    }
+
+    .certification-badge i {
+      color: var(--color-accent);
+      font-size: 1.5rem;
+    }
+
+    .btn-contact {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 1rem;
+      background: var(--color-primary);
+      color: white !important;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      margin-top: auto;
+    }
+
+    .btn-contact:hover {
+      background: var(--color-accent);
+      transform: translateY(-2px);
+    }
+
+    @media (max-width: 768px) {
+      .training-section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .training-stats {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .training-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Animaciones para los números */
+    @keyframes countUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .counter {
+      animation: countUp 1s ease-out forwards;
+    }
+
+    .impact-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .impact-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .impact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .impact-header {
+      margin-bottom: 2rem;
+    }
+
+    .impact-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--color-secondary);
+      border-radius: 20px;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .impact-badge i {
+      color: var(--color-accent);
+    }
+
+    .impact-title {
+      font-size: 2.5rem;
+      color: var(--color-primary);
+      line-height: 1;
+      margin-bottom: 2rem;
+    }
+
+    .impact-title .highlight {
+      display: block;
+      color: var(--color-accent);
+    }
+
+    .impact-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .impact-description {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--color-primary);
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    .impact-features {
+      display: grid;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .impact-testimonial {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      margin-bottom: 2rem;
+    }
+
+    .impact-testimonial p {
+      font-style: italic;
+      color: var(--color-primary);
+      margin-bottom: 1rem;
+    }
+
+    .impact-testimonial cite {
+      color: var(--color-primary);
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+
+    .impact-cta-text {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: var(--color-primary);
+      margin-bottom: 2rem;
+    }
+
+    .impact-actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover,
+    .btn-secondary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .impact-visual {
+      position: relative;
+    }
+
+    .impact-image-wrapper {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .impact-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .impact-image-wrapper:hover .impact-image {
+      transform: scale(1.05);
+    }
+
+    .impact-badge-floating {
+      position: absolute;
+      bottom: 2rem;
+      right: 2rem;
+      background: white;
+      padding: 1rem 1.5rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @media (max-width: 768px) {
+      .impact-badge-floating {
+        display: none;
+      }
+    }
+
+    .trust-indicators {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .trust-item {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .trust-logo {
+      height: 40px;
+      width: auto;
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .impact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .impact-visual {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .impact-section {
+        padding: 4rem 0;
+      }
+
+      .impact-title {
+        font-size: 2rem;
+      }
+
+      .impact-stats {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .impact-actions {
+        flex-direction: column;
+      }
+
+      .btn-primary,
+      .btn-secondary {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+
+    .testimonials-section {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials-section::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 20% 80%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .testimonials-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .testimonials-stats {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin-top: 2rem;
+    }
+
+    .stat-number {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--color-accent);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-stars {
+      color: #FFD700;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-icon {
+      font-size: 2rem;
+      color: var(--color-accent);
+      margin-bottom: 0.5rem;
+    }
+
+    .testimonials-slider {
+      position: relative;
+      margin: 0 -1rem;
+      padding: 0 1rem;
+    }
+
+    .testimonials-track {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 20px;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+      transition: all 0.3s ease;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonial-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.5rem;
+    }
+
+    .client-info {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .client-avatar {
+      position: relative;
+      width: 60px;
+      height: 60px;
+    }
+
+    .client-avatar img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .verified-badge {
+      position: absolute;
+      bottom: -5px;
+      right: -5px;
+      width: 20px;
+      height: 20px;
+      background: var(--color-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 0.7rem;
+      border: 2px solid white;
+    }
+
+    .client-details {
+      flex-grow: 1;
+    }
+
+    .client-name {
+      font-size: 1.1rem;
+      color: var(--color-primary);
+      margin-bottom: 0.25rem;
+    }
+
+    .client-location {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      opacity: 0.8;
+    }
+
+    .service-type {
+      font-size: 0.8rem;
+      padding: 0.5rem 1rem;
+      background: var(--color-secondary);
+      border-radius: 20px;
+      color: var(--color-primary);
+    }
+
+    .testimonial-content {
+      position: relative;
+      padding-left: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .quote-icon {
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: var(--color-accent);
+      opacity: 0.2;
+      font-size: 1.5rem;
+    }
+
+    .testimonial-text {
+      font-style: italic;
+      color: var(--color-primary);
+      line-height: 1.6;
+    }
+
+    .testimonial-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .stars {
+      color: #FFD700;
+    }
+
+    .rating-text {
+      font-weight: 500;
+      color: var(--color-primary);
+    }
+
+    .testimonial-date {
+      font-size: 0.9rem;
+      color: var(--color-primary);
+      opacity: 0.8;
+    }
+
+    .testimonials-nav {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+      pointer-events: none;
+      z-index: 3;
+    }
+
+    .nav-btn {
+      width: 40px;
+      height: 40px;
+      border: none;
+      border-radius: 50%;
+      background: white;
+      color: var(--color-primary);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      pointer-events: auto;
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background: var(--color-accent);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    .testimonials-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border: none;
+      border-radius: 50%;
+      background: var(--color-secondary);
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .dot.active {
+      background: var(--color-accent);
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 1024px) {
+      .testimonials-track {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .testimonials-section {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .testimonials-stats {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .testimonials-track {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-nav {
+        display: none;
+      }
+    }
+
+    .additional-services {
+      padding: 6rem 0;
+      background: linear-gradient(135deg, #ffffff 0%, #E6F4FF 100%);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .additional-services::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle at 80% 20%, rgba(19, 34, 74, 0.05) 0%, transparent 50%);
+    }
+
+    .service-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: var(--color-secondary);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .featured .service-badge {
+      background: var(--color-accent);
+      color: white;
+    }
+
+    .service-card:hover .icon-wrapper i {
+      transform: scale(1.1);
+    }
+
+
+
+    .service-images {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .service-images img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .service-images i {
+      color: var(--color-accent);
+    }
+
+    @media (max-width: 768px) {
+      .additional-services {
+        padding: 4rem 0;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .flexible-section {
+      padding: 5rem 0;
+      background-color: #f8f9fa;
+    }
+
+    .flexible-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      padding: 1rem;
+    }
+
+    .flexible-card {
+      background: white;
+      border-radius: 15px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .flexible-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-container {
+      width: 80px;
+      height: 80px;
+      background: var(--color-secondary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .flexible-card:hover .icon-container {
+      transform: scale(1.1);
+      background: var(--color-primary);
+    }
+
+    .icon-container i {
+      font-size: 2rem;
+      color: white;
+    }
+
+    .flexible-card h3 {
+      color: var(--color-primary);
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .flexible-card p {
+      color: var(--color-text);
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    /* Estilos para el manejo del slider en mobile */
+    .mobile-slider {
+      display: none;
+      width: 100%;
+      height: 520px;
+      padding: 20px 0 40px;
+    }
+
+    .swiper-slide {
+      width: 85%;
+      height: auto;
+    }
+
+    /* Personalizando la paginación */
+    .swiper-pagination {
+      bottom: 0 !important;
+    }
+
+    .swiper-pagination-bullet {
+      width: 8px;
+      height: 8px;
+      background: var(--color-primary);
+      opacity: 0.3;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background: var(--color-accent);
+    }
+
+    /* Media queries */
+    @media (min-width: 769px) {
+      .desktop-grid {
+        display: grid;
+      }
+
+      .mobile-slider {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .desktop-grid {
+        display: none;
+      }
+
+      .benefits-grid {
+        display: none;
+      }
+
+      .mobile-slider {
+        display: block;
+      }
+
+      .flexible-card {
+        margin: 0;
+      }
+
+      .section-description {
+        margin-bottom: 2rem;
+      }
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .flexible-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+
+      .section-description {
+        font-size: 1rem;
+        padding: 0 1rem;
+      }
+
+      .flexible-card {
+        padding: 1.5rem;
+      }
+    }
+
+    /* Aliado */
+    .aliado-section {
+      padding: 6rem 0;
+      background: var(--color-secondary);
+      overflow: hidden;
+    }
+
+    .aliado-section::before {
+      content: '';
+      position: absolute;
+      top: -10%;
+      left: -5%;
+      width: 120%;
+      height: 120%;
+      background: white;
+      transform: rotate(-3deg);
+      z-index: 1;
+    }
+
+    .aliado-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3rem;
+    }
+
+    .aliado-text {
+      flex: 1 1 500px;
+    }
+
+    .aliado-text p {
+      font-weight: 400;
+    }
+
+    .aliado-image {
+      flex: 1 1 400px;
+    }
+
+    .aliado-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .aliado-features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-block: 2rem;
+    }
+
+    .aliado-feature {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .aliado-feature-icon {
+      font-size: 1.5rem;
+      color: var(--color-accent);
+    }
+
+    .aliado-cta {
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .aliado-section {
+        padding: 4rem 0;
+      }
+
+      .aliado-section::before {
+        display: none;
+      }
+
+      .aliado-content {
+        flex-direction: column;
+      }
+
+      .aliado-image {
+        order: -1;
+        flex: none;
+      }
+    }
+
+    .contacto-section {
+      padding: 6rem 0;
+      background: var(--color-secondary);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contacto-section::after {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      right: -5%;
+      width: 120%;
+      height: 120%;
+      background: white;
+      transform: rotate(3deg);
+      z-index: 1;
+    }
+
+    .contacto-content {
+      position: relative;
+      z-index: 2;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 3rem;
+    }
+
+    .contacto-form {
+      flex: 1 1 500px;
+    }
+
+    .contacto-info {
+      flex: 1 1 300px;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      color: var(--color-primary);
+      font-weight: 500;
+    }
+
+    .form-input,
+    .form-textarea {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #e2e8f0;
+      border-radius: 0.375rem;
+      font-size: 1rem;
+      transition: border-color 0.3s ease;
+    }
+
+    .form-input:focus,
+    .form-textarea:focus {
+      outline: none;
+      border-color: var(--color-accent);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .contacto-info-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .contacto-info-icon {
+      font-size: 1.5rem;
+      color: var(--color-accent);
+      margin-right: 1rem;
+    }
+
+    .contacto-social {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .contacto-social a {
+      color: var(--color-primary);
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .contacto-social a:hover {
+      color: var(--color-accent);
+    }
+
+    .contacto-map {
+      margin-top: 2rem;
+      border-radius: 0.375rem;
+      overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+      .contacto-section {
+        padding: 4rem 0;
+      }
+
+      .contacto-section::after {
+        display: none;
+      }
+    }
+
+    .faq-section {
+      padding: 5rem 0;
+      background-color: #f8f9fa;
+    }
+
+    .faq-title {
+      text-align: center;
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+      font-weight: 700;
+    }
+
+    .faq-grid {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .faq-question {
+      padding: 1.5rem;
+      margin: 0;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 1.1rem;
+      color: var(--color-primary);
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: var(--color-accent);
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      opacity: 0;
+    }
+
+    .faq-item.active .faq-answer {
+      padding: 0 1.5rem 1.5rem;
+      max-height: 500px;
+      opacity: 1;
+    }
+
+    .faq-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    }
+
+    .faq-answer p {
+      margin: 0;
+      line-height: 1.6;
+      font-weight: 400;
+      color: var(--color-text);
+    }
+
+    @media (max-width: 768px) {
+      .faq-section {
+        padding: 3rem 1rem;
+      }
+
+      .faq-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+
+      .faq-question {
+        padding: 1.25rem;
+        font-size: 1rem;
+      }
+    }
+
+    .contact-section {
+      padding: 5rem 0;
+      background-color: #f8f9fa;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .contact-info {
+      padding-right: 2rem;
+    }
+
+    .contact-title {
+      color: var(--color-primary);
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+
+    .contact-description {
+      color: var(--color-text);
+      font-size: 1.1rem;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 3rem;
+    }
+
+    .contact-details {
+      background: white;
+      padding: 2rem;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-details h3 {
+      color: var(--color-primary);
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background: #f8f9fa;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+
+    .contact-item:hover {
+      transform: translateX(5px);
+      background: #f0f2f5;
+    }
+
+    .contact-item i {
+      font-size: 1.25rem;
+      color: var(--color-accent);
+      margin-right: 1rem;
+      width: 24px;
+      text-align: center;
+    }
+
+    .contact-link {
+      color: var(--color-text);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-link:hover {
+      color: var(--color-accent);
+    }
+
+    .social-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 2rem;
+      padding-top: 2rem;
+      border-top: 1px solid #eee;
+    }
+
+    .social-link {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--color-secondary);
+      color: white;
+      border-radius: 50%;
+      transition: all 0.3s ease;
+    }
+
+    .social-link:hover {
+      background: var(--color-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+    .map-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    @media (max-width: 992px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+
+      .contact-info {
+        padding-right: 0;
+      }
+
+      .map-container {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .contact-section {
+        padding: 3rem 1rem;
+      }
+
+      .contact-title {
+        font-size: 2rem;
+      }
+
+      .contact-description {
+        font-size: 1rem;
+      }
+
+      .map-container {
+        height: 300px;
+      }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+
+      .hero-content,
+      .app-content,
+      .oportunidades-content {
+        grid-template-columns: 1fr;
+      }
+
+      .hero::after,
+      .oportunidades-section::before {
+        display: none;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      .section {
+        padding: 4rem 0;
+      }
+    }
+
+    /* Animaciones AOS (Animate On Scroll) */
+    [data-aos] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease;
+    }
+
+    [data-aos].aos-animate {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-background"></div>
+    <div class="container-landing hero-container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h2 class="hero-title">
+            <span class="hero-title-highlight">Brigadas de aseo:</span>
+            Limpieza Express profunda y confiable para tus espacios
+          </h2>
+          <div class="hero-description">
+            <p>
+              En ciudades con un ritmo de vida acelerado, contar con una brigada de aseo profesional marca la diferencia
+              entre un espacio caótico y un ambiente limpio, ordenado y saludable. A diferencia del servicio tradicional
+              con una sola profesional, <strong>una brigada está compuesta por varias empleadas domésticas</strong> que
+              trabajan en
+              equipo para limpiar más rápido y con mejores resultados.
+            </p>
+            <p>
+              Ya sea para hogares, oficinas o eventos especiales, las brigadas de limpieza se han convertido en la
+              <strong>mejor opción para quienes buscan soluciones efectivas, rápidas</strong> y confiables.
+            </p>
+            <p>
+              Con una brigada de aseo de toc toc aseo, transforma tus espacios en menos tiempo y con resultados
+              impecables. Es la solución ideal si necesitas limpieza profunda, rápida y coordinada para tu hogar u
+              oficina.
+            </p>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">35+</span>
+              <span class="stat-label">Años de experiencia</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">10.000+</span>
+              <span class="stat-label">Clientes satisfechos</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Garantía de servicio</span>
+            </div>
+          </div>
+          <div class="hero-cta">
+            <a href="https://wa.link/0tk72d" target="_blank" class="btn btn-primary">
+              <span>Agenda tu servicio ahora</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://toctocaseo.com/wp-content/uploads/2025/05/furnitures-clean.webp"
+            alt="Profesional de limpieza en acción" class="main-image">
+          <div class="trust-badge">
+            <div class="badge-content">
+              <i class="fas fa-shield-alt"></i>
+              <span>Servicio 100% Garantizado</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== -->
+  <!-- ========== -->
+  <section class="hero" id="inicio">
+    <div class="hero-background"></div>
+    <div class="container-landing hero-container">
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="https://toctocaseo.com/wp-content/uploads/2025/05/furnitures-clean.webp"
+            alt="Profesional de limpieza en acción" class="main-image">
+        </div>
+        <div class="hero-text">
+          <h2 class="hero-title">
+            <span class="hero-title-highlight">¿Cómo funciona una brigada de aseo?</span>
+          </h2>
+          <div class="hero-description">
+            <ol>
+              <li>
+                <p>Una brigada de aseo funciona con una <strong>planificación estratégica que garantiza rapidez, orden y
+                    resultados</strong> impecables. Antes de iniciar, se realiza una <strong>visita técnica</strong>
+                  para
+                  evaluar las necesidades del cliente, conocer el estado del espacio y definir las zonas prioritarias
+                  según
+                  el tamaño del lugar y el nivel de suciedad.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Con esta información, <strong>se coordina el equipo y se asignan tareas específicas</strong> por
+                  zonas:
+                  cocina, baños, habitaciones, pisos, entre otros.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Las <strong>técnicas de limpieza y desinfección</strong> aplicadas por las brigadas pueden incluir el
+                  uso
+                  de máquinas especializadas, productos certificados y herramientas de limpieza modernas. Las
+                  <strong>brigadas de aseo</strong> están diseñadas para ofrecer un servicio rápido, eficiente y de alta
+                  calidad.
+                </p>
+              </li>
+            </ol>
+          </div>
+          <div class="hero-cta">
+            <a href="https://wa.link/0tk72d" target="_blank" class="btn btn-primary">
+              <span>Agenda tu servicio ahora</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== -->
+
+  <nav class="nav-tabs">
+    <div class="nav-tabs-container">
+      <button class="nav-arrow nav-arrow-left" aria-label="Desplazar a la izquierda">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="nav-tabs-scroll">
+        <div class="nav-tabs-wrapper">
+          <a href="#diferencias" class="nav-tab">
+            <i class="fas fa-broom"></i>
+            <span>Diferencias en los servicios</span>
+          </a>
+          <a href="#testimonios" class="nav-tab">
+            <i class="fas fa-star"></i>
+            <span>Testimonios</span>
+          </a>
+          <a href="#tipo" class="nav-tab">
+            <i class="fas fa-handshake"></i>
+            <span>Tipo de limpieza</span>
+          </a>
+          <a href="#cobertura" class="nav-tab">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Cobertura</span>
+          </a>
+          <a href="https://wa.link/0tk72d" target="_blank" class="nav-tab">
+            <i class="fas fa-phone"></i>
+            <span>Contacto</span>
+          </a>
+        </div>
+      </div>
+      <button class="nav-arrow nav-arrow-right" aria-label="Desplazar a la derecha">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== -->
+  <section class="section why-choose" id="por-que-elegirnos">
+    <div class="container-landing">
+      <div class="section-header">
+        <h2 class="section-title">¿Por qué elegir una brigada de aseo para tu empresa?</h2>
+      </div>
+      <div class="benefits-grid">
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-solid fa-broom"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Tu mejor opción</h3>
+          <p class="benefit-description">
+            Una brigada de aseo es la opción ideal cuando necesitas una <strong>limpieza rápida, profunda y bien
+              coordinada</strong> en cualquier tipo de espacio.
+          </p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-solid fa-spray-can-sparkles"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Espacios limpios y ordenados</h3>
+          <p class="benefit-description">
+            Ya sea en hogares, oficinas o lugares con alto flujo de personas, contar con <strong>varias profesionales
+              trabajando al tiempo</strong> permite obtener resultados de calidad en menos tiempo.
+          </p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-solid fa-couch"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Servicio a medida</h3>
+          <p class="benefit-description">
+            Este servicio se adapta a diferentes contextos y necesidades, garantizando eficiencia, orden y limpieza sin
+            complicaciones.
+          </p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="benefit-icon">
+            <div class="icon-wrapper">
+              <i class="fas fa-solid fa-building"></i>
+            </div>
+            <div class="icon-bg"></div>
+          </div>
+          <h3 class="benefit-title">Confianza y respaldo</h3>
+          <p class="benefit-description">
+            Con el respaldo de una <strong>empresa de aseo como toc toc aseo</strong>, puedes confiar en la experiencia,
+            el cumplimiento legal de contrataciones y la calidad del servicio. Además, se <strong>capacita</strong>
+            constantemente a los equipos para asegurar que la <strong>limpieza y mantenimiento</strong> cumplan con los
+            estándares más altos.
+          </p>
+          <div class="benefit-footer">
+            <span class="benefit-check">
+              <i class="fas fa-check-circle"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slider para Mobile -->
+      <div class="swiper mobile-slider">
+        <div class="swiper-wrapper">
+          <!-- Las mismas cards pero dentro de swiper-slide -->
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-broom"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">
+                Tu mejor opción
+              </h3>
+              <p class="benefit-description">
+                Una brigada de aseo es la opción ideal cuando necesitas una <strong>limpieza rápida, profunda y bien
+                  coordinada</strong> en cualquier tipo de espacio.
+              </p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-spray-can-sparkles"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">
+                Espacios limpios y ordenados
+              </h3>
+              <p class="benefit-description">
+                Ya sea en hogares, oficinas o lugares con alto flujo de personas, contar con <strong>varias
+                  profesionales
+                  trabajando al tiempo</strong> permite obtener resultados de calidad en menos tiempo.
+              </p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-couch"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">
+                Servicio a medida
+              </h3>
+              <p class="benefit-description">
+                Este servicio se adapta a diferentes contextos y necesidades, garantizando eficiencia, orden y limpieza
+                sin
+                complicaciones.
+              </p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <div class="icon-wrapper">
+                  <i class="fas fa-building"></i>
+                </div>
+                <div class="icon-bg"></div>
+              </div>
+              <h3 class="benefit-title">
+                Confianza y respaldo
+              </h3>
+              <p class="benefit-description">
+                Con el respaldo de una <strong>empresa de aseo como toc toc aseo</strong>, puedes confiar en la
+                experiencia,
+                el cumplimiento legal de contrataciones y la calidad del servicio. Además, se <strong>capacita</strong>
+                constantemente a los equipos para asegurar que la <strong>limpieza y mantenimiento</strong> cumplan con
+                los
+                estándares más altos.
+              </p>
+              <div class="benefit-footer">
+                <span class="benefit-check">
+                  <i class="fas fa-check-circle"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <!-- ... Repetir para cada card ... -->
+        </div>
+        <!-- Navegación del slider -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== -->
+
+  <!-- ========== -->
+  <section class="services-section" id="diferencias">
+    <div class="container-landing">
+      <div class="services-header">
+        <h2 class="section-title">¿Cuál es la diferencia entre brigada de aseo y servicio individual?</h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-solid fa-user-group"></i>
+            </div>
+            <span class="service-tag">Popular</span>
+          </div>
+          <h3 class="service-title">Bigrada de limpieza</h3>
+          <p class="service-description">
+            La <strong>brigada de limpieza</strong> se recomienda especialmente cuando el espacio es amplio o hay muchas
+            tareas acumuladas. Además, este servicio es ideal para <strong>realizar una jornada de aseo</strong>
+            puntual, por ejemplo antes o después de un evento o mudanza.
+          </p>
+          <a href="https://wa.link/0tk72d" target="_blank" class="service-cta">
+            <span>Agendar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-solid fa-user"></i>
+            </div>
+            <span class="service-tag">Especializado</span>
+          </div>
+          <h3 class="service-title">Servicio individual</h3>
+          <p class="service-description">
+            Un servicio de aseo individual implica que una sola profesional realiza la <strong>limpieza regular</strong>
+            del espacio, mientras que una <strong>brigada de aseo</strong> permite que varias profesionales de aseo
+            trabajen simultáneamente, logrando una <strong>limpieza general y profunda en menos tiempo.</strong>
+          </p>
+          <div class="service-price custom">
+            <span class="price-contact">Precio personalizado</span>
+          </div>
+          <a href="https://wa.link/0tk72d" target="_blank" class="service-cta">
+            <span>Consultar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== -->
+
+  <!-- ========== -->
+  <section class="services-section" id="tipo">
+    <div class="container-landing">
+      <div class="services-header">
+        <h2 class="section-title">¿Qué tipo de limpieza realiza una brigada?</h2>
+        <p>La brigada de aseo puede encargarse de diversos tipos de limpieza, como:</p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-solid fa-soap"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Limpieza intensiva</h3>
+          <p class="service-description">
+            textiles, muebles y colchones
+          </p>
+          <a href="https://wa.link/0tk72d" target="_blank" class="service-cta">
+            <span>Agendar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-solid fa-cubes"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Limpieza de espacios públicos</h3>
+          <p class="service-description">
+            y zonas de alto tráfico
+          </p>
+          <a href="https://wa.link/0tk72d" target="_blank" class="service-cta">
+            <span>Agendar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-solid fa-calendar-check"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Limpieza en eventos</h3>
+          <p class="service-description">
+            donde hay residuos acumulados
+          </p>
+          <div class="service-price custom">
+            <span class="price-contact">Precio personalizado</span>
+          </div>
+          <a href="https://wa.link/0tk72d" target="_blank" class="service-cta">
+            <span>Consultar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-header">
+            <div class="service-icon">
+              <i class="fas fa-solid fa-hand-fist"></i>
+            </div>
+          </div>
+          <h3 class="service-title">Aseo profundo</h3>
+          <p class="service-description">
+            en cocinas, baños y habitaciones
+          </p>
+          <div class="service-price custom">
+            <span class="price-contact">Cotización personalizada</span>
+          </div>
+          <a href="https://wa.link/0tk72d" target="_blank" class="service-cta">
+            <span>Consultar</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== -->
+
+  <!-- ========== -->
+  <section class="flexible-section">
+    <div class="container-landing">
+      <h2 class="section-title">Puntos Clave</h2>
+      <p class="section-description">
+        Una <strong>brigada de aseo</strong> es un equipo profesional que trabaja para ofrecer una <strong>limpieza
+          profunda y detallada.</strong>
+      </p>
+      <p class="section-description">
+        Si estás buscando una <strong>brigada de aseo confiable en tu ciudad, toc toc aseo</strong> tiene todo lo que
+        necesitas:
+        experiencia, profesionalismo y una atención al detalle que transforma cualquier espacio. ¡Agenda hoy tu brigada
+        y vive la experiencia de una limpieza sin preocupaciones!
+      </p>
+
+      <div class="flexible-grid desktop-grid">
+        <!-- Card 1 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-home"></i>
+          </div>
+          <h3>Todo tipo de espacios</h3>
+          <p>
+            Es ideal para hogares, oficinas, eventos, mudanzas y situaciones donde se requiere <strong>limpieza rápida y
+              efectiva.</strong>
+          </p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Reserva hoy</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-calendar-week"></i>
+          </div>
+          <h3>Flexibilidad de horarios</h3>
+          <p>
+            La brigada de aseo permite <strong>ahorrar tiempo, esfuerzo</strong> y garantiza resultados óptimos.
+          </p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contrata ahora</a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Respaldo de Élite Soluciones</h3>
+          <p>
+            <strong>toc toc aseo</strong> ofrece el respaldo de Élite Soluciones, con años de experiencia y personal
+            capacitado.
+          </p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Asignar día de limpieza</a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Limpieza saludable</h3>
+          <p>
+            La <strong>limpieza y mantenimiento</strong> son esenciales para la salud, bienestar y orden de tus
+            espacios.
+          </p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Agenda tu limpieza saludable</a>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-tools"></i>
+          </div>
+          <h3>Servicio completo</h3>
+          <p>
+            Las <strong>brigadas de aseo incluyen</strong> todos los elementos necesarios: personal, productos y
+            herramientas.
+          </p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contrata hoy mismo</a>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3>Servicios especializados</h3>
+          <p>
+            Puedes contratar el <strong>servicio de brigadas de aseo</strong> para limpiezas puntuales o mantenimientos
+            regulares.
+          </p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Reserva ya</a>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="flexible-card">
+          <div class="icon-container">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <h3>Cumplimiento asegurado</h3>
+          <p><strong>toc toc aseo</strong> te asegura cumplimiento, seguridad y satisfacción total.</p>
+          <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contáctanos hoy</a>
+        </div>
+      </div>
+
+      <!-- Slider para Mobile -->
+      <div class="swiper mobile-slider">
+        <div class="swiper-wrapper">
+          <!-- Las mismas cards pero dentro de swiper-slide -->
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-user-clock"></i>
+              </div>
+              <h3>Todo tipo de espacios</h3>
+              <p>
+                Es ideal para hogares, oficinas, eventos, mudanzas y situaciones donde se requiere <strong>limpieza
+                  rápida y
+                  efectiva.</strong>
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Reserva hoy</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-week"></i>
+              </div>
+              <h3>Flexibilidad de horarios</h3>
+              <p>
+                La brigada de aseo permite <strong>ahorrar tiempo, esfuerzo</strong> y garantiza resultados óptimos.
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contrata ahora</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <h3>Respaldo de Élite Soluciones</h3>
+              <p>
+                <strong>toc toc aseo</strong> ofrece el respaldo de Élite Soluciones, con años de experiencia y personal
+                capacitado.
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Asignar día de limpieza</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-broom"></i>
+              </div>
+              <h3>Limpieza saludable</h3>
+              <p>
+                La <strong>limpieza y mantenimiento</strong> son esenciales para la salud, bienestar y orden de tus
+                espacios.
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Agenda tu limpieza saludable</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-tools"></i>
+              </div>
+              <h3>Servicio completo</h3>
+              <p>
+                Las <strong>brigadas de aseo incluyen</strong> todos los elementos necesarios: personal, productos y
+                herramientas.
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contrata hoy mismo</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-calendar-alt"></i>
+              </div>
+              <h3>Servicios especializados</h3>
+              <p>
+                Puedes contratar el <strong>servicio de brigadas de aseo</strong> para limpiezas puntuales o
+                mantenimientos
+                regulares.
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Reserva ya</a>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flexible-card">
+              <!-- Contenido de la card -->
+              <div class="icon-container">
+                <i class="fas fa-check-circle"></i>
+              </div>
+              <h3>Cumplimiento asegurado</h3>
+              <p>
+                <strong>toc toc aseo</strong> te asegura cumplimiento, seguridad y satisfacción total.
+              </p>
+              <a class="service-cta" target="_blank" href="https://wa.link/40el40">Contáctanos hoy</a>
+            </div>
+          </div>
+          <!-- ... Repetir para cada card ... -->
+        </div>
+        <!-- Navegación del slider -->
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== -->
+
+
+  <section class="testimonials-section" id="testimonios">
+    <div class="container-landing">
+      <div class="testimonials-header" data-aos="fade-up">
+        <h2 class="section-title">Testimonios de clientes satisfechos</h2>
+        <h3 class="section-title">Casos de éxito en lavado de sus muebles</h3>
+        <p class="section-description">
+          Con cada lavado y sanitización de muebles hemos transformado hogares. Nuestros clientes destacan la alta
+          calidad y profesionalismo de nuestro servicio.
+        </p>
+        <div class="testimonials-stats">
+          <div class="stat-item">
+            <div class="stat-number">4.9</div>
+            <div class="stat-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="stat-label">Calificación promedio</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">10000+</div>
+            <div class="stat-icon">
+              <i class="fas fa-smile"></i>
+            </div>
+            <div class="stat-label">Clientes satisfechos</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonials-slider">
+        <div class="testimonials-track">
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://toctocaseo.com/wp-content/uploads/2025/03/testimoniales-avatar.png"
+                    alt="Ana María Gómez">
+                  <div class="verified-badge">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+                <div class="client-details">
+                  <h3 class="client-name">Camila R.</h3>
+                  <div class="client-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Medellín</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-type">Servicio semanal</div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">"No sabía cuánto lo necesitaban mis muebles hasta que conocí toc toc. El sofá
+                quedó como nuevo y el olor... ¡una delicia! Ya es un ritual en casa."</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-text">5.0</span>
+              </div>
+              <div class="testimonial-date">Marzo 2025</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://toctocaseo.com/wp-content/uploads/2025/03/testimoniales-avatar.png"
+                    alt="Carlos Méndez">
+                  <div class="verified-badge">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+                <div class="client-details">
+                  <h3 class="client-name">Luis M.</h3>
+                  <div class="client-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bogotá</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-type">Limpieza profunda</div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">"Con niños pequeños y mascota, creí que ya no había solución para mi sofá. toc
+                toc me sorprendió: limpieza profunda, rápida y sin complicaciones"
+              </p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+                <span class="rating-text">4.5</span>
+              </div>
+              <div class="testimonial-date">Febrero 2025</div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="testimonial-header">
+              <div class="client-info">
+                <div class="client-avatar">
+                  <img src="https://toctocaseo.com/wp-content/uploads/2025/03/testimoniales-avatar.png"
+                    alt="Luisa Rodríguez">
+                  <div class="verified-badge">
+                    <i class="fas fa-check"></i>
+                  </div>
+                </div>
+                <div class="client-details">
+                  <h3 class="client-name">Andrea G.</h3>
+                  <div class="client-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Cali</span>
+                  </div>
+                </div>
+              </div>
+              <div class="service-type">Servicio quincenal</div>
+            </div>
+            <div class="testimonial-content">
+              <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+              </div>
+              <p class="testimonial-text">"Profesionales, puntuales y súper detallistas. Dejaron los muebles impecables
+                y además usaron productos que no afectan a mis gatos. ¡Recomendadísimo!"</p>
+            </div>
+            <div class="testimonial-footer">
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-text">5.0</span>
+              </div>
+              <div class="testimonial-date">Enero 2025</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonials-nav">
+          <button class="nav-btn prev" aria-label="Anterior testimonio">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="nav-btn next" aria-label="Siguiente testimonio">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+
+      <div class="testimonials-dots">
+        <button class="dot active" aria-label="Página 1"></button>
+        <button class="dot" aria-label="Página 2"></button>
+        <button class="dot" aria-label="Página 3"></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="coverage-section" id="cobertura">
+    <div class="container-landing">
+      <div class="coverage-header">
+        <h2 class="section-title">Cobertura en Colombia</h2>
+      </div>
+
+      <div class="coverage-content">
+        <div class="coverage-grid">
+          <div class="city-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Lavado de todo tipo de muebles en Bogotá</h3>
+            <p class="city-description">¡Bogotá merece espacios impecables! Nuestro servicio de lavado profesional está
+              <strong>disponible para transformar tu hogar.</strong> Agenda ahora y disfruta de ambientes limpios,
+              frescos y saludables sin salir de la capital.
+            </p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="https://wa.link/0tk72d" target="_blank" class="city-cta">
+              <span>Reserva en Bogotá</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Lavado de muebles en Medellín</h3>
+            <p>
+              En Medellín, cuidamos tus muebles como nadie más. Con técnicas avanzadas y atención experta, devolvemos la
+              vida a tus espacios. <strong>Reserva tu limpieza hoy</strong> y respira frescura en la ciudad de la eterna
+              primavera.
+            </p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="https://wa.link/0tk72d" target="_blank" class="city-cta">
+              <span>Reserva en Medellín</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Lavado de muebles en Cali</h3>
+            <p class="city-description">En Cali, <strong>damos nueva vida a tus muebles</strong> con limpieza
+              profesional y resultados garantizados. Solicita tu servicio ahora y disfruta de un hogar impecable bajo el
+              cálido sol del Valle del Cauca.
+            </p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="https://wa.link/0tk72d" target="_blank" class="city-cta">
+              <span>Reserva en Cali</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="city-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="city-header">
+              <div class="city-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="city-status active">
+                <span class="status-dot"></span>
+                Disponible
+              </div>
+            </div>
+            <h3 class="city-name">Cobertura en Bucaramanga</h3>
+            <p class="city-description">
+              La ciudad bonita también merece <strong>muebles relucientes.</strong> Nuestro equipo especializado está
+              listo para transformar tus espacios. Haz clic aquí y agenda tu servicio, ¡tu hogar lo agradecerá!
+            </p>
+            <div class="city-features">
+              <div class="feature">
+                <i class="fas fa-user-friends"></i>
+                <span>Personal local</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-phone"></i>
+                <span>Soporte inmediato</span>
+              </div>
+            </div>
+            <a href="https://wa.link/0tk72d" target="_blank" class="city-cta">
+              <span>Reserva en Bucaramanga</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== -->
+  <section class="contact-section" id="contacto">
+    <div class="container-landing">
+      <div class="contact-grid">
+        <!-- Información de contacto -->
+        <div class="contact-info">
+          <h2 class="contact-title">¿Quiénes conforman una brigada de limpieza?</h2>
+          <p class="contact-description">
+            Los <strong>miembros de la brigada</strong> son profesionales del aseo que han sido
+            <strong>capacitados</strong> para trabajar en equipo, de forma organizada, eficiente y segura. En empresas
+            como <strong>toc toc aseo,</strong> se cuenta con estrictos filtros de selección y <strong>capacitación
+              continua,</strong> lo que garantiza resultados óptimos.
+          </p>
+          <p class="contact-description">
+            Una <strong>brigada podría</strong> incluir entre 2 y 6 personas, dependiendo del tipo de limpieza y el
+            tamaño del espacio. En <strong>empresas privadas</strong> u hogares grandes, este número puede variar.
+          </p>
+          <div class="contact-details">
+            <h3>Línea WhatsApp</h3>
+            <div class="contact-item">
+              <i class="fab fa-whatsapp"></i>
+              <a href="https://wa.link/0tk72d" class="contact-link">+57 318 610 3890</a>
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/toctocaseo?_rdc=1&_rdr#" target="_blank" class="social-link"
+                aria-label="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://www.instagram.com/toctocaseo/" target="_blank" class="social-link"
+                aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/toc-toc-aseo/posts/?feedView=all" target="_blank"
+                class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.youtube.com/@toctocaseo" target="_blank" class="social-link" aria-label="YouTube">
+                <i class="fab fa-youtube"></i>
+              </a>
+              <a href="https://www.tiktok.com/@toctocaseo" target="_blank" class="social-link" aria-label="TikTok">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ========== -->
+
+  <section class="faq-section" id="preguntas-frecuentes">
+    <div class="container-landing">
+      <h2 class="faq-title">Acerca de nuestro servicio de Limpieza y Lavado de muebles</h2>
+      <div class="faq-grid">
+        <!-- Los items del FAQ se generarán dinámicamente con JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (window.innerWidth <= 768) {
+        return new Swiper('.mobile-slider', {
+          slidesPerView: 'auto',
+          spaceBetween: 20,
+          centeredSlides: true,
+          loop: true,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+          },
+          autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true,
+          },
+          effect: 'coverflow',
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: false,
+          },
+        });
+      }
+    });
+
+    // Manejar cambios de tamaño de ventana
+    window.addEventListener('resize', function () {
+      if (window.innerWidth <= 768) {
+        if (!document.querySelector('.swiper').swiper) {
+          return new Swiper('.mobile-slider', {
+            // ... mismas opciones que arriba
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+              el: '.swiper-pagination',
+              clickable: true,
+            },
+            autoplay: {
+              delay: 3000,
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+            },
+            effect: 'coverflow',
+            coverflowEffect: {
+              rotate: 0,
+              stretch: 0,
+              depth: 100,
+              modifier: 1,
+              slideShadows: false,
+            },
+          });
+        }
+      }
+    });
+  </script>
+
+  <script>
+    AOS.init({
+      duration: 800,
+      once: true
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const wrapper = document.querySelector('.nav-tabs-wrapper');
+      const leftArrow = document.querySelector('.nav-arrow-left');
+      const rightArrow = document.querySelector('.nav-arrow-right');
+      const scrollContainer = document.querySelector('.nav-tabs-scroll');
+      let scrollPosition = 0;
+      const scrollStep = 200;
+
+      // Función para actualizar la visibilidad de las flechas
+      function updateArrowsVisibility() {
+        leftArrow.style.opacity = scrollPosition <= 0 ? '0.5' : '1';
+        leftArrow.style.pointerEvents = scrollPosition <= 0 ? 'none' : 'auto';
+
+        const maxScroll = wrapper.scrollWidth - scrollContainer.clientWidth;
+        rightArrow.style.opacity = scrollPosition >= maxScroll ? '0.5' : '1';
+        rightArrow.style.pointerEvents = scrollPosition >= maxScroll ? 'none' : 'auto';
+      }
+
+      // Inicializar la visibilidad de las flechas
+      updateArrowsVisibility();
+
+      // Manejar el clic en la flecha izquierda
+      leftArrow.addEventListener('click', () => {
+        scrollPosition = Math.max(0, scrollPosition - scrollStep);
+        wrapper.style.transform = `translateX(-${scrollPosition}px)`;
+        updateArrowsVisibility();
+      });
+
+      // Manejar el clic en la flecha derecha
+      rightArrow.addEventListener('click', () => {
+        const maxScroll = wrapper.scrollWidth - scrollContainer.clientWidth;
+        scrollPosition = Math.min(maxScroll, scrollPosition + scrollStep);
+        wrapper.style.transform = `translateX(-${scrollPosition}px)`;
+        updateArrowsVisibility();
+      });
+
+      // Actualizar la navegación activa al hacer scroll
+      window.addEventListener('scroll', () => {
+        const sections = document.querySelectorAll('section[id]');
+        const scrollY = window.pageYOffset;
+
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 100;
+          const sectionBottom = sectionTop + section.offsetHeight;
+          const sectionId = section.getAttribute('id');
+          const navLink = document.querySelector(`.nav-tab[href="#${sectionId}"]`);
+
+          if (scrollY >= sectionTop && scrollY < sectionBottom) {
+            navLink?.classList.add('active');
+          } else {
+            navLink?.classList.remove('active');
+          }
+        });
+      });
+
+      // Manejar el redimensionamiento de la ventana
+      window.addEventListener('resize', updateArrowsVisibility);
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const faqData = [
+        {
+          question: "¿Cómo funciona el servicio de lavado a domicilio?",
+          answer: "Cuando <strong>solicitas</strong> un servicio de <strong>lavado de muebles,</strong> enviamos un equipo de profesionales a tu hogar para realizar la limpieza y sanitización de tus muebles. Nos adaptamos a tus necesidades específicas."
+        },
+        {
+          question: "¿Usan productos biodegradables?",
+          answer: "Si. Usamos <strong>productos biodegradables,</strong> seguros para tus muebles y el medio ambiente. Nuestra prioridad es garantizar una limpieza profunda sin dañar tu salud ni el entorno."
+        },
+        {
+          question: "¿Cuánto tiempo toma el proceso de limpieza?",
+          answer: "El tiempo de limpieza depende del tipo de mueble y el tamaño del área. Sin embargo, nos aseguramos de <strong>garantizar</strong> un servicio rápido y eficiente para tu comodidad."
+        },
+        {
+          question: "¿Qué tipo de muebles limpiamos?",
+          answer: "Ofrecemos <strong>lavado de muebles</strong> como sofás, poltronas, colchones, sillas y <strong>alfombras.</strong> Cuidamos cada mueble con técnicas especializadas."
+        },
+        {
+          question: "¿Cómo evitan que los muebles se manchen nuevamente?",
+          answer: "Te proporcionamos recomendaciones útiles para el cuidado de tus muebles y evitar que se <strong>manchen</strong> nuevamente, asegurando que tu <strong>lavado y limpieza</strong> perduren en el tiempo."
+        },
+        {
+          question: "¿Realizan desinfección de colchones?",
+          answer: "Sí, ofrecemos un <strong>servicio de lavado de colchones</strong> que incluye <strong>desinfección</strong> para eliminar los <strong>ácaros</strong> y bacterias, asegurando un descanso saludable."
+        },
+        {
+          question: "¿Puedo agendar el servicio en cualquier momento?",
+          answer: "Sí, puedes <strong>agendar tu lavado de muebles</strong> en el horario que mejor te convenga. Contáctanos y coordinamos la visita."
+        },
+        {
+          question: "¿Cómo agendo mi servicio de lavado de muebles?",
+          answer: "Agendar es sencillo. Solo necesitas envíenos un mensaje a nuestro Whatsapp o contáctanos a través de este enlace para coordinar tu servicio de <strong>lavado a domicilio.</strong>"
+        },
+      ];
+
+      const faqGrid = document.querySelector('.faq-grid');
+
+      // Generar elementos FAQ
+      faqData.forEach(item => {
+        const faqItem = document.createElement('div');
+        faqItem.className = 'faq-item';
+        faqItem.innerHTML = `
+            <h3 class="faq-question">${item.question}</h3>
+            <div class="faq-answer">
+                <p>${item.answer}</p>
+            </div>
+        `;
+        faqGrid.appendChild(faqItem);
+      });
+
+      // Manejar clics en las preguntas
+      document.querySelectorAll('.faq-question').forEach(question => {
+        question.addEventListener('click', () => {
+          const item = question.parentElement;
+          const isActive = item.classList.contains('active');
+
+          // Cerrar todos los items activos
+          document.querySelectorAll('.faq-item').forEach(otherItem => {
+            if (otherItem !== item) {
+              otherItem.classList.remove('active');
+            }
+          });
+
+          // Toggle el item actual
+          item.classList.toggle('active');
+
+          // Animación suave al scroll si es necesario
+          if (!isActive) {
+            const itemTop = item.getBoundingClientRect().top + window.pageYOffset;
+            const offset = 100;
+            window.scrollTo({
+              top: itemTop - offset,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+
+</html>
